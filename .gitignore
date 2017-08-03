@@ -43,3 +43,6 @@ resources/signing
 
 # browser platform ignore
 platforms/browser
+platforms/
+
+plugins/browser\.json
