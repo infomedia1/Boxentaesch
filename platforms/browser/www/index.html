@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline'; media-src *; script-src * 'unsafe-inline'">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+	
+    <!-- Your app title -->
+    <title>My App</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+	<!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+	<link rel="stylesheet" href="lib/framework7/css/framework7-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-right panel-reveal">
+      
+	<div class="page-content contacts-content">
+	  <div class="list-block contacts-block">
+		<div class="list-group"><ul>
+			<li class="list-group-title">A</li>
+			<li><div class="item-content"><div onclick="setDisplayTrueS('jump-e');" class="item-inner close-panel"><div class="item-title">Alphabet</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Äerd</div></div></div></li>
+		  </ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">B</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Billjee</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Bëbee</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Béchs</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">bieden</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">Buedem</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">bestueden</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">bueren</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">blären</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Bléi</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">bleiwen</div></div></div></li>
+		</ul></div>
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">C</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<div class="list-group"><ul>
+			<li class="list-group-title">D</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Dëppen</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">duerch</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Dier</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">E</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Eeër</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">F</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">frech</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">féx</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">G</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">gëeenegt</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">giereg</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">gär</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">Gei</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">H</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Hierscht</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">I</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ir');" class="item-inner close-panel"><div class="item-title">iren (sech)</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">J</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Jeeër</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">K</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">keng</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Kierch</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Käerz</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">Kären</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Kéis</div></div></div></li>
+		</ul></div>
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">L</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<div class="list-group"><ul>
+			<li class="list-group-title">M</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Meter</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Mëscht</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">mécht</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-è');" class="item-inner close-panel"><div class="item-title">Ministère</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">N</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">nee</div></div></div></li>
+		</ul></div>
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">O</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<div class="list-group"><ul>
+			<li class="list-group-title">P</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Pech</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Pëll</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Péng</div></div></div></li>
+		</ul></div>
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">Q</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<div class="list-group"><ul>
+			<li class="list-group-title">R</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Reen</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">Rei</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">S</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Strenz</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Streech</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Seeërei</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Stéck</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">Schiet</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Stuerm</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Stäerkt</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ir');" class="item-inner close-panel"><div class="item-title">Spur (eng)</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">Stär</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Schnéi</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">séier</div></div></div></li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ai');" class="item-inner close-panel"><div class="item-title">Saier</div></div></div></li>
+		</ul></div>
+		<div class="list-group"><ul>
+			<li class="list-group-title">T</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Tëlee</div></div></div></li>
+		</ul></div>
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">U</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">V</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">W</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">X</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<!-- <div class="list-group"><ul> -->
+			<!-- <li class="list-group-title">Y</li> -->
+			<!-- <li><div class="item-content"><div class="item-inner close-panel"><div class="item-title">Wuert</div></div></div></li> -->
+		<!-- </ul></div> -->
+		<div class="list-group"><ul>
+			<li class="list-group-title">Z</li>
+			<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Zebra</div></div></div></li>
+		</ul></div>
+		
+	  </div>
+	</div>   
+</div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Lëtzebuergesch fir an d'Boxentäsch</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+			
+			
+			  <!-- Speed Dial Wrap -->
+			  <div id="thespeeddial" class="speed-dial">
+				<!-- FAB inside will open Speed Dial actions -->
+				<a href="#" class="floating-button">
+				  <!-- First icon is visible when Speed Dial actions are closed -->
+				  <i class="icon icon-plus"></i>
+				  <!-- Second icon is visible when Speed Dial actions are opened -->
+				  <i class="icon icon-close"></i>
+				</a>
+				<!-- Speed Dial Actions -->
+				<div class="speed-dial-buttons">
+				  <!-- 1 -->
+				  <a href="#" onclick="resetApp();"><i class="icon f7-icons home size-19">home_fill</i></a>
+				  <!-- 2 -->
+				  <a href="#" class="link icon-only open-panel" onclick="closespeeddial();"><i class="icon icon-bars"></i></a>
+				  <!-- Third Speed Dial  button -->
+				  <a href="#" onclick="" class="open-popup" data-popup=".popup-about"  ><i class="icon f7-icons home size-23">info</i></a>
+				</div>
+			  </div>
+			
+			
+			
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content close-panel" id="page-content">
+                        <div class="content-block">
+                            <!--<div style="font-size:50px;overflow: auto;white-space:nowrap;">-->
+							<div class="theselectionbar" id="theselectionbar">
+								<div style="line-height:5.625em;overflow-y: hidden;overflow-x:overlay;text-align:center;" id="theselectionbarscroller">
+									<div style="font-size:1em; white-space: pre;"><span class="bigletter">&nbsp;</span><a class="bigletter" id="toggle-a" onclick="setDisplayTrue('jump-a');">A</a><a class="bigletter" id="toggle-b" onclick=setDisplayTrue("jump-b");>B</a>  <a class="bigletter" id="toggle-c" onclick=setDisplayTrue("jump-c");>C</a><a class="bigletter" id="toggle-d" onclick=setDisplayTrue("jump-d");>D</a><a class="bigletter" id="toggle-e" onclick=setDisplayTrue("jump-e");>E</a><a class="bigletter" id="toggle-f" onclick=setDisplayTrue("jump-f");>F</a><a class="bigletter" id="toggle-g" onclick=setDisplayTrue("jump-g");>G</a><a class="bigletter" id="toggle-h" onclick=setDisplayTrue("jump-h");>H</a><a class="bigletter" id="toggle-i" onclick=setDisplayTrue("jump-i");>I</a><a class="bigletter" id="toggle-j" onclick=setDisplayTrue("jump-j");>J</a><a class="bigletter" id="toggle-k" onclick=setDisplayTrue("jump-k");>K</a><a class="bigletter" id="toggle-l" onclick=setDisplayTrue("jump-l");>L</a><a class="bigletter" id="toggle-m" onclick=setDisplayTrue("jump-m");>M</a><a class="bigletter" id="toggle-n" onclick=setDisplayTrue("jump-n");>N</a><a class="bigletter" id="toggle-o" onclick=setDisplayTrue("jump-o");>O</a><a class="bigletter" id="toggle-p" onclick=setDisplayTrue("jump-p");>P</a><a class="bigletter" id="toggle-q" onclick=setDisplayTrue("jump-q");>Q</a><a class="bigletter" id="toggle-r" onclick=setDisplayTrue("jump-r");>R</a><a class="bigletter" id="toggle-s" onclick=setDisplayTrue("jump-s");>S</a><a class="bigletter" id="toggle-t" onclick=setDisplayTrue("jump-t");>T</a><a class="bigletter" id="toggle-u" onclick=setDisplayTrue("jump-u");>U</a><a class="bigletter" id="toggle-v" onclick=setDisplayTrue("jump-v");>V</a><a class="bigletter" id="toggle-w" onclick=setDisplayTrue("jump-w");>W</a><a class="bigletter" id="toggle-x" onclick=setDisplayTrue("jump-x");>X</a><a class="bigletter" id="toggle-y" onclick=setDisplayTrue("jump-y");>Y</a><a class="bigletter" id="toggle-z" onclick=setDisplayTrue("jump-z");>Z</a><span>&nbsp;</span></div>
+								</div>
+								<div style="line-height:3.125em;height:auto;vertical-align:middle;text-align:center;">
+								<div id="subselector" style="font-size:1em; white-space: pre; overflow-y: hidden; overflow-x: overlay; height:0px;"></div>
+								</div>
+								
+							</div>
+							<div id="thetabbar" class="toolbar tabbar tabbar-labels" style="display:none;">
+								<div class="toolbar-inner">
+									<a href="#tab1" id="content1" onclick="toggleContent('empty','content1');" class="tab-link active">
+										<i class="icon demo-icon-1"></i>
+										<span class="tabbar-label">Beispill</span>
+									</a>
+									<a href="#tab2" id="content2" onclick="toggleContent('empty','content2');" class="tab-link">
+										<i class="icon demo-icon-2">
+											<!--<span class="badge bg-red">5</span>-->
+										</i>
+										<span class="tabbar-label">Reegel</span>
+									</a>
+									<a href="#tab3" id="content3" onclick="toggleContent('empty','content3')"; class="tab-link">
+										<i class="icon demo-icon-3"></i>
+										<span class="tabbar-label">Annexe</span>
+									</a>
+								</div>
+							</div>
+							<div class="overlay" id="overlay"></div>
+							<div id="stiches-top"></div>
+							
+							<div class="startup" id="startup">
+								<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1>
+								<h2>&nbsp;</h2><h2>Dreck op e Buschtaaf fir déi entspriechend Wierder, souwie och d'Reegelen ugewissen ze kréien.</h2>
+								
+							</div>
+							
+							<div class="wierderblock" id="contentblock"></div>
+							
+							<br>
+							
+
+							<div id="regelbox"><h1>Reegel vum Buschtaaf XYZ</h1>Ladida Reegel hei an do</div>
+							
+						</div>
+							
+						<div id="stiches-front"></div>
+							<div id="konterbont"></div>
+							<div id="lod"></div>
+
+						<div class="AppVersion" id="AppVersion"></div>						
+							
+                        </div>
+					</div>
+					
+            </div>
+			
+				
+			
+
+			<!--<div class="list-block">
+					<li class="swipeout">
+						<div class="swipeout-content">
+							<a href="#" class="item-content item-link">
+								<div class="item-inner close-panel">
+									<div class="item-title-row">
+									  <div class="item-title">Facebook</div>
+									  <div class="item-after">17:14</div>
+									</div>
+									<div class="item-subtitle">New messages from John Doe</div>
+									<div class="item-text">Lorem ipsum ...</div>
+								  </div>
+							</a>
+						</div>
+						<div class="swipeout-actions-left">
+							<a href="#" class="swipeout-overswipe bg-green reply">Reply</a>
+							<a href="#" class="bg-blue forward">Forward</a>
+						  </div>
+						  <div class="swipeout-actions-right">
+							<a href="#" class="mark bg-orange">Mark</a>
+							<a href="#" class="swipeout-delete swipeout-overswipe">Delete</a>
+						  </div>
+					</li>
+				</div>  -->                  
+			
+         <!--    Bottom Toolbar-->
+          <!--  <div class="toolbar">
+                <div class="toolbar-inner">-->
+                    <!-- Toolbar links -->
+                 <!--   <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+	<div class="playaudio" id="playaudio" style="visibility:hidden;opacity:0;">
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+		<div class='bar'></div>
+	</div>
+	<div class="popup popup-about close-popup">
+		<div class="content-block">
+		  <h1 class="popuph1">Lëtzebuergesch fir an d'Boxentäsch</h1>
+		  <h2 class="popuph2">Eng Zesummenaarbescht vum Lëtzebuerger Online Dictionnaire an Autisme Luxembourg a.s.b.l.</h2>
+
+		  <p><a href="#" class="button button-big button-fill close-popup">Zoumaachen</a></p>
+		</div>
+	  </div>
+	
+	<!-- <script type="text/javascript" src="jquery/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.konterbont.boxentaesch" version="0.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Lëtzebuergesch fir an d'Boxentäsch</name>
+    <description>
+        Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Reegelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
+    </description>
+    <author email="jill.staudt@autisme.lu" href="http://www.autisme.lu">
+        Jill Staudt Autisme Luxembourg a.s.b.l.
+    </author>
+    <icon src="icon.png" />
+    <splash src="www/splash.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="pgb-builder-version" value="2" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
+    <preference name="DisallowOverscroll" value="true" />
+</widget>
