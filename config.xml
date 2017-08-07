@@ -1,59 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.konterbont.boxentaesch" version="0.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.konterbont.boxentaesch" version="0.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Lëtzebuergesch fir an d'Boxentäsch</name>
     <description>
-        Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Reegelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
+        A basic Framework7 template for PhoneGap.
     </description>
-    <author email="jill.staudt@autisme.lu" href="http://www.autisme.lu">
-        Jill Staudt Autisme Luxembourg a.s.b.l.
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
     </author>
-    <preference name="pgb-builder-version" value="2" />
-    <preference name="phonegap-version" value="cli-7.0.1" />
-    <icon src="icon.png" />
-    <splash src="www/splash.png" />
-    <platform name="ios">
-        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
-        <icon height="120" src="res/icon/ios/icon-60-2x.png" width="120" />
-        <icon height="180" src="res/icon/ios/icon-60-3x.png" width="180" />
-        <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
-        <icon height="152" src="res/icon/ios/icon-76-2x.png" width="152" />
-        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
-        <icon height="80" src="res/icon/ios/icon-40-2x.png" width="80" />
-        <icon height="57" src="res/icon/ios/icon-57.png" width="57" />
-        <icon height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
-        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
-        <icon height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-        <icon height="29" src="res/icon/ios/icon-small.png" width="29" />
-        <icon height="58" src="res/icon/ios/icon-small-2x.png" width="58" />
-        <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
-        <icon height="100" src="res/icon/ios/icon-50-2x.png" width="100" />
-        <splash height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
-        <splash height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-        <splash height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
-        <splash height="2048" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
-        <splash height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
-        <splash height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" />
-        <splash height="1136" src="res/screen/ios/screen-iphone-568h-2x.png" width="640" />
-        <splash height="1334" src="res/screen/ios/screen-iphone-portrait-667h.png" width="750" />
-        <splash height="2208" src="res/screen/ios/screen-iphone-portrait-736h.png" width="1242" />
-        <splash height="1242" src="res/screen/ios/screen-iphone-landscape-736h.png" width="2208" />
-    </platform>
-    <platform name="android">
-        <icon qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
-        <icon qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
-        <icon qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
-        <icon qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-        <icon qualifier="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
-        <icon qualifier="xxxhdpi" src="res/icon/android/icon-192-xxxhdpi.png" />
-        <splash qualifier="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
-        <splash qualifier="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
-        <splash qualifier="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
-        <splash qualifier="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
-        <splash qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
-        <splash qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
-        <splash qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
-        <splash qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
-    </platform>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -75,9 +28,4 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-file" spec="~4.3.3" />
-    <plugin name="cordova-plugin-indexeddb-async" spec="~0.0.1" />
-    <plugin name="cordova-plugin-media" spec="~3.0.1" />
-    <plugin name="cordova-plugin-app-version" spec="~0.1.9" />
-    <engine name="browser" spec="~4.1.0" />
 </widget>

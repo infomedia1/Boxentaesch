@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("./raleway/Raleway-Light.ttf") format("opentype");   
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("./raleway/Raleway-Regular.ttf") format("opentype");   
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("./raleway/Raleway-SemiBold.ttf") format("opentype");   
+}
+
+body {
+	font-family: "Raleway";
+}
+
+
+/* Your app custom files in this file */
+.view-right {
+  border-left: 1px solid #b2b2b2;
+}
+/* iPad Vertical */
+@media (min-width: 768px) {
+  .panel.panel-left.panel-cover {
+    width: 320px;
+  }
+}
+/* iPad Horizontal */
+@media (min-width: 1024px) {
+  /* Let's hide panel-opener when left panel is visible */
+  .view-main .navbar .open-panel {
+    display: none;
+  }
+}
+
+#sidescroller {
+	right: -16px;
+    margin-left: -16px;
+	top: 44px;
+}
+#sidescrollerparent {
+	overflow:hidden;
+}
+#theselectionbar .swiper-slide {
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+#theselectionbar .swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 20px;
+  font-size:32px;
+}
+#theselectionbar .swiper-container {
+  height: 120px;
+  margin: 35px 0;
+}

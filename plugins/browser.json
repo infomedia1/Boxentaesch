@@ -15,23 +15,7 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        },
-        "cordova-plugin-indexeddb-async": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        },
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        },
-        "cordova-plugin-app-version": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        }
-    }
+    "dependent_plugins": {}
 }
