@@ -33,14 +33,17 @@ body {
     display: none;
   }
 }
-
+#thesideblock {
+	margin-bottom: 56px;
+}
 #sidescroller {
 	right: -16px;
     margin-left: -16px;
-	top: 44px;
+	/* top: 56px; */
 }
 #sidescrollerparent {
 	overflow:hidden;
+	margin-top:56px;
 }
 #theselectionbar .swiper-slide {
   background: #fff;

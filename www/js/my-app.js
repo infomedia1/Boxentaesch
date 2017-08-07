@@ -1,31 +1,6 @@
 // Initialize your app
 var $$ = Dom7;
 
-var myApp = new Framework7({
-    material: true,
-	panelRightBreakpoint: 1024,
-	
-	onAjaxStart: function (xhr) {
-        myApp.showIndicator();
-    },
-    onAjaxComplete: function (xhr) {
-        myApp.hideIndicator();
-    }
-});
-
-// Export selectors engine
-
-
-// Add views
-var leftView = myApp.addView('.view-right', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-});
-var mainView = myApp.addView('.view-main', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-});
-
 var template = $$('#eisbuchstaawen').html();
 var compiledTemplate = Template7.compile(template);
 // Now we may render our compiled template by passing required context
@@ -166,6 +141,35 @@ template = $$('#thesideblock').html();
 compiledTemplate = Template7.compile(template);
 html = compiledTemplate(context);
 $$('#thesideblock').html(html);
+
+
+
+var myApp = new Framework7({
+    material: true,
+	panelRightBreakpoint: 1024,
+	
+	onAjaxStart: function (xhr) {
+        myApp.showIndicator();
+    },
+    onAjaxComplete: function (xhr) {
+        myApp.hideIndicator();
+    }
+});
+
+// Export selectors engine
+
+
+// Add views
+var leftView = myApp.addView('.view-right', {
+    // Because we use fixed-through navbar we can enable dynamic navbar
+    dynamicNavbar: true
+});
+var mainView = myApp.addView('.view-main', {
+    // Because we use fixed-through navbar we can enable dynamic navbar
+    dynamicNavbar: true
+});
+
+
 
 var mySwiper3 = myApp.swiper('.swiper-3', {
   pagination:'.swiper-3 .swiper-pagination',

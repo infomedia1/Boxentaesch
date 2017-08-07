@@ -41,130 +41,15 @@
 				{{#each buchstaawen}}
 				{{#if showbuchstaaf}}
 					<div class="list-group"><ul>
-						<li class="list-group-title" data-index-letter='{{denBuchstaaf}}'>{{denBuchstaaf}}</li>
+						<li class="list-group-title" data-index-letter="{{denBuchstaaf}}">{{denBuchstaaf}}</li>
 						{{#each wierder}}
 							<li><div class="item-content"><div onclick="setDisplayTrueS('jump-e');" class="item-inner close-panel"><div class="item-title">{{wuert}}</div></div></div></li>
 						{{/each}}
 					</ul></div>
 				{{/if}}
 				{{/each}}
-				
-				<!--
-				<div class="list-group"><ul>
-					<li class="list-group-title" data-index-letter="A">A</li>
-					<li><div class="item-content"><div onclick="setDisplayTrueS('jump-e');" class="item-inner close-panel"><div class="item-title">Alphabet</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Äerd</div></div></div></li>
-				  </ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title" data-index-letter="B">B</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Billjee</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Bëbee</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Béchs</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">bieden</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">Buedem</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">bestueden</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">bueren</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">blären</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Bléi</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">bleiwen</div></div></div></li>
-				</ul></div>
-				
-				<div class="list-group"><ul>
-					<li class="list-group-title">D</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Dëppen</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">duerch</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Dier</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">E</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Eeër</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">F</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">frech</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">féx</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">G</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">gëeenegt</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">giereg</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">gär</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">Gei</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">H</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Hierscht</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">I</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ir');" class="item-inner close-panel"><div class="item-title">iren (sech)</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">J</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Jeeër</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">K</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">keng</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Kierch</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Käerz</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">Kären</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Kéis</div></div></div></li>
-				</ul></div>
-				
-				<div class="list-group"><ul>
-					<li class="list-group-title">M</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Meter</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Mëscht</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">mécht</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-è');" class="item-inner close-panel"><div class="item-title">Ministère</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">N</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">nee</div></div></div></li>
-				</ul></div>
-				
-				<div class="list-group"><ul>
-					<li class="list-group-title">P</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Pech</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Pëll</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Péng</div></div></div></li>
-				</ul></div>
-				
-				<div class="list-group"><ul>
-					<li class="list-group-title">R</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Reen</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ei');" class="item-inner close-panel"><div class="item-title">Rei</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">S</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Strenz</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ee');" class="item-inner close-panel"><div class="item-title">Streech</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Seeërei</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-é');" class="item-inner close-panel"><div class="item-title">Stéck</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ie');" class="item-inner close-panel"><div class="item-title">Schiet</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Stuerm</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-uer');" class="item-inner close-panel"><div class="item-title">Stäerkt</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ir');" class="item-inner close-panel"><div class="item-title">Spur (eng)</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-är');" class="item-inner close-panel"><div class="item-title">Stär</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">Schnéi</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-éi');" class="item-inner close-panel"><div class="item-title">séier</div></div></div></li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ai');" class="item-inner close-panel"><div class="item-title">Saier</div></div></div></li>
-				</ul></div>
-				<div class="list-group"><ul>
-					<li class="list-group-title">T</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');setDisplayTrueS('jump-ë');" class="item-inner close-panel"><div class="item-title">Tëlee</div></div></div></li>
-				</ul></div>
-				
-				<div class="list-group"><ul>
-					<li class="list-group-title">Z</li>
-					<li><div class="item-content"><div onclick="setDisplayTrue('jump-e');" class="item-inner close-panel"><div class="item-title">Zebra</div></div></div></li>
-				</ul></div>
-			-->	
 			  </div>
-			  
 			</div>
-			
 			<ul class="list-index"></ul>
           </div>
 		 
@@ -259,10 +144,11 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/welcomescreen.js"></script>
     <script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>
-    
+    <script type="text/javascript" src="js/framework7.indexed-list.min.js"></script>
     
     <script type="text/javascript" src="js/my-app.js"></script>
-	<script type="text/javascript" src="js/framework7.indexed-list.min.js"></script>
+	
+
     <script type="text/javascript" src="js/my.js"></script>
   </body>
 </html>
