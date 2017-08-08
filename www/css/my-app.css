@@ -33,6 +33,18 @@ body {
     display: none;
   }
 }
+.hidesub {
+	height: 0px !important;
+	margin: 0 !important;
+}
+.swiper-container {
+	transition: height .4s ease;
+}
+
+.page-content {
+	padding-top: 0px !important;
+}
+
 #thesideblock {
 	margin-bottom: 56px;
 }

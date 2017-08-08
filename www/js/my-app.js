@@ -7,31 +7,31 @@ var compiledTemplate = Template7.compile(template);
 var context = {
     buchstaawen: [
 		{ denBuchstaaf: 'A', wierder: [
-			{ wuert: 'Alphabet' },
-			{ wuert: 'Äerd' } 
+			{ wuert: 'Alphabet', jumppoint: 'E' },
+			{ wuert: 'Äerd', jumppoint: 'E-UER' } 
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'B', wierder: [
-			{ wuert: 'Billjee' },
-			{ wuert: 'Bëbee' },
-			{ wuert: 'Béchs' },
-			{ wuert: 'bieden' },
-			{ wuert: 'Buedem' },
-			{ wuert: 'bestueden' },
-			{ wuert: 'bueren' },
-			{ wuert: 'blären' },
-			{ wuert: 'Bléi' },
-			{ wuert: 'bleiwen' }
+			{ wuert: 'Billjee', jumppoint: 'E-EE' },
+			{ wuert: 'Bëbee', jumppoint: 'E-Ë' },
+			{ wuert: 'Béchs', jumppoint: 'E-É' },
+			{ wuert: 'bieden', jumppoint: 'E-IE' },
+			{ wuert: 'Buedem', jumppoint: 'E-IE' },
+			{ wuert: 'bestueden', jumppoint: 'E-IE' },
+			{ wuert: 'bueren', jumppoint: 'E-UER' },
+			{ wuert: 'blären', jumppoint: 'E-ÄR' },
+			{ wuert: 'Bléi', jumppoint: 'E-ÉI' },
+			{ wuert: 'bleiwen', jumppoint: 'E-EI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'C', wierder: [
 		
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'D', wierder: [
-			{ wuert: 'Dëppen' },
-			{ wuert: 'duerch' },
-			{ wuert: 'Dier' }
+			{ wuert: 'Dëppen', jumppoint: 'E-Ë' },
+			{ wuert: 'duerch', jumppoint: 'E-UER' },
+			{ wuert: 'Dier', jumppoint: 'E-UER' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'E', wierder: [
-			{ wuert: 'Eeër' }
+			{ wuert: 'Eeër', jumppoint: 'E-Ë' }
 		], subBuchstaawen : [
 			{subBuchstaaf: 'ee' },
 			{subBuchstaaf: 'ë' },
@@ -46,73 +46,75 @@ var context = {
 			{subBuchstaaf: 'ai' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'F', wierder: [
-			{ wuert: 'féx' }
+			{ wuert: 'féx', jumppoint: 'E-É' },
+			{ wuert: 'frech', jumppoint: 'E' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'G', wierder: [
-			{ wuert: 'gëeenegt' },
-			{ wuert: 'giereg' },
-			{ wuert: 'gär' },
-			{ wuert: 'Gei' }
+			{ wuert: 'gëeenegt', jumppoint: 'E-Ë' },
+			{ wuert: 'giereg', jumppoint: 'E-UER' },
+			{ wuert: 'gär', jumppoint: 'E-ÄR' },
+			{ wuert: 'Gei', jumppoint: 'E-EI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'H', wierder: [
-			{ wuert: 'Hierscht' }
+			{ wuert: 'Hierscht', jumppoint: 'E-UER' },
+			{ wuert: 'Haiser', jumppoint: 'E-AI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'I', wierder: [
-			{ wuert: 'iren (sech)' }
+			{ wuert: 'iren (sech)', jumppoint: 'E-IR' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'J', wierder: [
-			{ wuert: 'Jeeër' }
+			{ wuert: 'Jeeër', jumppoint: 'E-Ë' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'K', wierder: [
-			{ wuert: 'keng' },
-			{ wuert: 'Kierch' },
-			{ wuert: 'Käerz' },
-			{ wuert: 'Kären' },
-			{ wuert: 'Kéis' }
+			{ wuert: 'keng', jumppoint: 'E' },
+			{ wuert: 'Kierch', jumppoint: 'E-UER' },
+			{ wuert: 'Käerz', jumppoint: 'E-UER' },
+			{ wuert: 'Kären', jumppoint: 'E-ÄR' },
+			{ wuert: 'Kéis', jumppoint: 'E-ÉI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'L', wierder: [
 		
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'M', wierder: [
-			{ wuert: 'Meter' },
-			{ wuert: 'Mëscht' },
-			{ wuert: 'mécht' },
-			{ wuert: 'Ministère' }
+			{ wuert: 'Meter', jumppoint: 'E' },
+			{ wuert: 'Mëscht', jumppoint: 'E-Ë' },
+			{ wuert: 'mécht', jumppoint: 'E-É' },
+			{ wuert: 'Ministère', jumppoint: 'E-È' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'N', wierder: [
-			{ wuert: 'nee' }
+			{ wuert: 'nee', jumppoint: 'E-EE' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'O', wierder: [
 		
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'P', wierder: [
-			{ wuert: 'Pech' },
-			{ wuert: 'Pëll' },
-			{ wuert: 'Péng' }
+			{ wuert: 'Pech', jumppoint: 'E' },
+			{ wuert: 'Pëll', jumppoint: 'E-Ë' },
+			{ wuert: 'Péng', jumppoint: 'E-É' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'Q', wierder: [
 		
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'R', wierder: [
-			{ wuert: 'Reen' },
-			{ wuert: 'Rei' }
+			{ wuert: 'Reen', jumppoint: 'E-EE' },
+			{ wuert: 'Rei', jumppoint: 'E-EI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'S', wierder: [
-			{ wuert: 'Strenz' },
-			{ wuert: 'Streech' },
-			{ wuert: 'Seeërei' },
-			{ wuert: 'Stéck' },
-			{ wuert: 'Schiet' },
-			{ wuert: 'Stuerm' },
-			{ wuert: 'Stäerkt' },
-			{ wuert: 'Spur (eng)' },
-			{ wuert: 'Stär' },
-			{ wuert: 'Schnéi' },
-			{ wuert: 'séier' },
-			{ wuert: 'Saier' }
+			{ wuert: 'Strenz', jumppoint: 'E' },
+			{ wuert: 'Streech', jumppoint: 'E-EE' },
+			{ wuert: 'Seeërei', jumppoint: 'E-Ë' },
+			{ wuert: 'Stéck', jumppoint: 'E-É' },
+			{ wuert: 'Schiet', jumppoint: 'E-IE' },
+			{ wuert: 'Stuerm', jumppoint: 'E-UER' },
+			{ wuert: 'Stäerkt', jumppoint: 'E-UER' },
+			{ wuert: 'Spur (eng)', jumppoint: 'E-IR' },
+			{ wuert: 'Stär', jumppoint: 'E-ÄR' },
+			{ wuert: 'Schnéi', jumppoint: 'E-ÉI' },
+			{ wuert: 'séier', jumppoint: 'E-ÉI' },
+			{ wuert: 'Saier', jumppoint: 'E-AI' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'T', wierder: [
-			{ wuert: 'Tëlee' }
+			{ wuert: 'Tëlee', jumppoint: 'E-Ë' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'U', wierder: [
 		
@@ -130,7 +132,7 @@ var context = {
 		
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'Z', wierder: [
-			{ wuert: 'Zebra' }
+			{ wuert: 'Zebra', jumppoint: 'E' }
 		], showbuchstaaf: true }
 	]
 };
@@ -173,6 +175,15 @@ var mainView = myApp.addView('.view-main', {
 
 var mySwiper3 = myApp.swiper('.swiper-3', {
   pagination:'.swiper-3 .swiper-pagination',
+  spaceBetween: 10,
+  slidesPerView: 5,
+  effect: 'slide',
+  parallax: true,
+  centeredSlides: true,
+  zoom: true
+});
+var mySwiperSub = myApp.swiper('.swiper-sub', {
+  pagination:'.swiper-sub .swiper-pagination',
   spaceBetween: 10,
   slidesPerView: 5,
   effect: 'slide',
