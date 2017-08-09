@@ -2,21 +2,42 @@ var oldhash;
 function closespeeddial(){document.getElementById('thespeeddial').setAttribute('class','speed-dial');}
 function resetApp(){getContent('start');}
 function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
+function openpage(siteurl){var onInApp = window.open('http://'+siteurl, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');}
+function playAudio(audioid)
+{
+	if (cordova.platformId=='android') {
+		var mediasrc='/android_asset/www/';
+	} else {
+		var mediasrc='';
+	}
+	$$('#audioplayer').removeClass('no-player');
+	
+	//alert(cordova.platformId);
+	//console.log('platform: '+ cordova.platformId);
+	
+	var my_media = new Media(mediasrc+'audio/'+audioid+'.mp3', function () {
+						$$('#audioplayer').addClass('no-player');
+					}, function (err) { alert('Audio Error: '+err); }
+				);
+	my_media.play();
+}
+
 function initSubselector(hash)
 {
-	console.log('subselector toggled on!');
+	// console.log('subselector toggled on!');
 	var jumppoint=0;
 	if(oldhash!==hash[0])
 	{
 		mySwiperSub.removeAllSlides();
 		oldhash='';
 	}
-	console.log('1 oldhash: '+oldhash+' hash: '+hash);
+	// console.log('1 oldhash: '+oldhash+' hash: '+hash);
 	var newslides=[];
 	var setoldhash;
 	switch (hash[0])
 	{
-	case 'E': console.log('E');
+	case 'E': 
+	// console.log('E');
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'E-EE\');"><span>ee</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'E-Ë\');"><span>ë</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'E-É\');"><span>é</span></div>',
@@ -96,7 +117,7 @@ function getContent(contentid)
 			subselector=true; hash=contentid;
 			jumpto(jumppoint,hash,subselector);
 			break;
-			case 'E-EE' : thecontentbox="<h1>Buchstaaf ee</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Streech<br>nee<br>Reen<br>Billjee</h2></div><div class=\"right-content-block\">&#9732;</div></div>";
+			case 'E-EE' : thecontentbox="<h1>Buchstaaf ee</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Streech<br>nee<br>Reen<br>Billjee</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-ee');\">&nbsp;</p></div></div>";
 				result=contentid.charCodeAt(0)+' '+contentid;
 				jumpto(jumppoint,hash,subselector);
 				break;
@@ -234,6 +255,6 @@ function getContent(contentid)
 	if (result==='start')
 	{
 		//Startup
-		console.log('startup initiated');
+		// console.log('startup initiated');
 	}
 }
