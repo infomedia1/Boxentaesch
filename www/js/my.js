@@ -1,27 +1,34 @@
+var oldhash;
 function closespeeddial(){document.getElementById('thespeeddial').setAttribute('class','speed-dial');}
 function resetApp(){getContent('start');}
-function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);}}
+function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
 function initSubselector(hash)
 {
 	console.log('subselector toggled on!');
 	var jumppoint=0;
-	console.log('jp: '+hash);
-	mySwiperSub.removeAllSlides();
+	if(oldhash!==hash[0])
+	{
+		mySwiperSub.removeAllSlides();
+		oldhash='';
+	}
+	console.log('1 oldhash: '+oldhash+' hash: '+hash);
 	var newslides=[];
+	var setoldhash;
 	switch (hash[0])
 	{
 	case 'E': console.log('E');
-			newslides=	['<div class="swiper-slide"><span>ee</span></div>',
-						'<div class="swiper-slide"><span>ë</span></div>',
-						'<div class="swiper-slide"><span>é</span></div>',
-						'<div class="swiper-slide"><span>è</span></div>',
-						'<div class="swiper-slide"><span>ie, ue</span></div>',
-						'<div class="swiper-slide"><span>ier, uer, äer</span></div>',
-						'<div class="swiper-slide"><span>ir, ur</span></div>',
-						'<div class="swiper-slide"><span>är</span></div>',
-						'<div class="swiper-slide"><span>éi</span></div>',
-						'<div class="swiper-slide"><span>ei</span></div>',
-						'<div class="swiper-slide"><span>ai</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'E-EE\');"><span>ee</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-Ë\');"><span>ë</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-É\');"><span>é</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-È\');"><span>è</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-IE\');"><span>ie, ue</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-UER\');"><span>ier, uer, äer</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-IR\');"><span>ir, ur</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-ÄR\');"><span>är</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-ÉI\');"><span>éi</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-EI\');"><span>ei</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'E-AI\');"><span>ai</span></div>'];
+						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'E-EE': jumppoint=0; break;
@@ -39,15 +46,21 @@ function initSubselector(hash)
 		break;
 		
 	}
-	mySwiperSub.appendSlide(newslides);
-	// $$('#swiper-sub').addClass('showsub');
-	$$('#swiper-sub').removeClass('hidesub');
+	console.log('2 oldhash: '+oldhash+' hash: '+hash);
+	if(oldhash!==hash[0])
+	{
+		mySwiperSub.appendSlide(newslides);
+		// $$('#swiper-sub').addClass('showsub');
+		$$('#swiper-sub').removeClass('hidesub');
+	}
 	mySwiperSub.slideTo(jumppoint,650);
+	oldhash=setoldhash;
 }
 function getContent(contentid)
 {
 	//
 	var thecontentbox= $$('#thecontent').html();
+	var thecontentrule=$$('#thecontentrule').html();
 	var result='';
 	var hash='';
 	var jumppoint=contentid.charCodeAt(0) - 65;
@@ -58,18 +71,32 @@ function getContent(contentid)
 		hash=contentid;
 		subselector=true;
 	} else { $$('#swiper-sub').addClass('hidesub'); }
+	$$('#thesubnavbar').removeClass('hide-tabbar');
 	switch (contentid)
 	{
 		case 'A' : thecontentbox="<h1>Buchstaaf A</h1>";
 			result=contentid.charCodeAt(0)+' '+contentid;
 			jumpto(jumppoint,hash,subselector);
 			break;
+		case 'B' : thecontentbox="<h1>Buchstaaf B</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'C' : thecontentbox="<h1>Buchstaaf C</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'D' : thecontentbox="<h1>Buchstaaf D</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
 		case 'E' : thecontentbox="<h1>Buchstaaf E</h1>";
+			thecontentrule="<h1>kuerzen e</h1><p></p><h1>laangen e</h1><p></p>";
 			result=contentid.charCodeAt(0)+' '+contentid;
 			subselector=true; hash=contentid;
 			jumpto(jumppoint,hash,subselector);
 			break;
-			case 'E-EE' : thecontentbox="<h1>Buchstaaf ee</h1>";
+			case 'E-EE' : thecontentbox="<h1>Buchstaaf ee</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Streech<br>nee<br>Reen<br>Billjee</h2></div><div class=\"right-content-block\">&#9732;</div></div>";
 				result=contentid.charCodeAt(0)+' '+contentid;
 				jumpto(jumppoint,hash,subselector);
 				break;
@@ -113,29 +140,100 @@ function getContent(contentid)
 				result=contentid.charCodeAt(0)+' '+contentid;
 				jumpto(jumppoint,hash,subselector);
 				break;
+		case 'F' : thecontentbox="<h1>Buchstaaf F</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'G' : thecontentbox="<h1>Buchstaaf G</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'H' : thecontentbox="<h1>Buchstaaf H</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'I' : thecontentbox="<h1>Buchstaaf I</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'J' : thecontentbox="<h1>Buchstaaf J</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'K' : thecontentbox="<h1>Buchstaaf K</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'L' : thecontentbox="<h1>Buchstaaf L</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'M' : thecontentbox="<h1>Buchstaaf M</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'N' : thecontentbox="<h1>Buchstaaf N</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'O' : thecontentbox="<h1>Buchstaaf O</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'P' : thecontentbox="<h1>Buchstaaf P</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'Q' : thecontentbox="<h1>Buchstaaf Q</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'R' : thecontentbox="<h1>Buchstaaf R</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'S' : thecontentbox="<h1>Buchstaaf S</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'T' : thecontentbox="<h1>Buchstaaf T</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'U' : thecontentbox="<h1>Buchstaaf U</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'V' : thecontentbox="<h1>Buchstaaf V</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'W' : thecontentbox="<h1>Buchstaaf W</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'X' : thecontentbox="<h1>Buchstaaf X</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
+		case 'Y' : thecontentbox="<h1>Buchstaaf Y</h1>";
+			result=contentid.charCodeAt(0)+' '+contentid;
+			jumpto(jumppoint,hash,subselector);
+			break;
 		case 'Z' : thecontentbox="<h1>Buchstaaf Z</h1>";
 			result=contentid.charCodeAt(0)+' '+contentid;
 			jumpto(jumppoint,hash,subselector);
 			break;
 		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dreck op e Buschtaaf fir déi entspriechend Wierder, souwie och d'Reegelen ugewissen ze kréien.</h2>";
 			result='start';
+			$$('#thesubnavbar').addClass('hide-tabbar');
 	}
 	// console.log('selector: '+contentid);
 	$$('#thecontent').html(thecontentbox);
+	$$('#thecontentrule').html(thecontentrule);
 	if (result==='start')
 	{
 		//Startup
 		console.log('startup initiated');
 	}
-}
-function calcHash(thestring)
-{
-    var hash = 0;
-    if (thestring.length == 0) return hash;
-    for (i = 0; i < thestring.length; i++) {
-        char = thestring.charCodeAt(i);
-        hash = ((hash<<5)-hash)+char;
-        hash = hash & hash; // Convert to 32bit integer
-    }
-    return hash;
 }

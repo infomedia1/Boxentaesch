@@ -76,8 +76,8 @@
         <div class="pages">
           <!-- Page, data-page contains page name-->
           <div data-page="index-1" class="page">
-		  
-		  
+		  <div class="theplaceholder"></div>
+
 		  <!-- Speed Dial Wrap -->
 		  <div id="thespeeddial" class="speed-dial">
 			<a href="#" class="floating-button">
@@ -98,46 +98,95 @@
 		  
             <!-- Scrollable page content-->
             <div class="page-content">
+			
               <!-- <div class="content-block-title">Hello</div> -->
               <div class="content-block">
 			  
 			 <div class="theselectionbar" id="theselectionbar">
-				<div class="swiper-container swiper-3">
-					<div class="swiper-wrapper" id="eisbuchstaawen">
-						{{#each buchstaawen}}
-						<div class="swiper-slide" onclick="getContent('{{denBuchstaaf}}');"><span>{{denBuchstaaf}}</span></div>
-						{{/each}}
+				 <div class="overlay" id="overlay"></div>
+					<div class="swiper-container swiper-3">
+						<div class="swiper-wrapper" id="eisbuchstaawen">
+							{{#each buchstaawen}}
+							<div class="swiper-slide" onclick="getContent('{{denBuchstaaf}}');"><span>{{denBuchstaaf}}</span></div>
+							{{/each}}
+						</div>
+					</div>
+					<div class="swiper-container swiper-sub hidesub" id="swiper-sub">
+						<div class="swiper-wrapper" id="eissubbuchstaawen">
+							<div class="swiper-slide" onclick="getContent('NOPE');"><span>NOPE</span></div>
+						</div>
+					</div>
+				
+			</div>
+			<div class="tabcontainer" id="tabcontainer">
+				<div class="subnavbar hide-tabbar" id="thesubnavbar">
+					<div class="buttons-row">
+						<a href="#tab1" class="button active tab-link">Beispill</a>
+						<a href="#tab2" class="button tab-link">Regel</a>
 					</div>
 				</div>
-				<div class="swiper-container swiper-sub hidesub" id="swiper-sub">
-					<div class="swiper-wrapper" id="eissubbuchstaawen">
-						<div class="swiper-slide" onclick="getContent('NOPE');"><span>NOPE</span></div>
-					</div>
-				</div>
-			  </div>
-			  
-                <div class="content-block-inner" id="thecontent">
-					<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1>
+			</div>
+			 <!-- TAB-CONTENTS --> 
+			<div class="tabs-swipeable-wrap">
+				  <div class="tabs">
+					<div id="tab1" class="page-content tab active">
+					  <div class="content-block">
+					  <div class="content-block-inner" id="thecontent">
+						<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1>
 					<h2>Dreck op e Buschtaaf fir déi entspriechend Wierder, souwie och d'Reegelen ugewissen ze kréien.</h2>
-                </div>
-              </div>
-             
-			 
-			 
+						<img src="css/res/KonterbontLogo_Cover-02.png" class="logokonterbont">
+						<img src="css/res/LOD_logo_original.png" class="logolod">
+						</div>
+					  </div>
+					</div>
+					<!-- Tab 2 -->
+					<div id="tab2" class="page-content tab">
+					  <div class="content-block">
+						<div class="content-block-inner" id="thecontentrule">
+							<h1>Regelen</h1>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
             </div>
           </div>
+		  <div class="audioplayer no-player" id="audioplayer">
+			<div class="inneraudioplayer">
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+				<div class='bar'></div>
+			</div>
+			<h3 style="margin-top:0px;font-size:35px;color:rgba(109,109,109,0.6);padding-left:15px;width:50px;float:left;">&#9732;</h3>
+		  </div>
+		  
         </div>
       </div>
+	  
+	  
+	  
     </div>
 	
 	<div class="popup popup-about close-popup">
 		<div class="content-block">
 		  <h1 class="popuph1">Lëtzebuergesch fir an d'Boxentäsch</h1>
 		  <h2 class="popuph2">Eng Zesummenaarbescht vum Lëtzebuerger Online Dictionnaire an Autisme Luxembourg a.s.b.l.</h2>
+		  <img src="css/res/KonterbontLogo_Cover-02.png" class="logokonterbont">
+		  <img src="css/res/LOD_logo_original.png" class="logolod">
+		  <div class="logolod"></div>
 
 		  <p><a href="#" class="button button-big button-fill close-popup">Zoumaachen</a></p>
 		</div>
 	  </div>
+	  
+	  
 	
 	
     <!-- Path to Framework7 Library JS-->

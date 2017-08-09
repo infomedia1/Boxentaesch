@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.konterbont.boxentaesch" version="0.6.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.konterbont.boxentaesch" version="0.6.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Lëtzebuergesch fir an d'Boxentäsch</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        Lëtzebuergesch fir an d'Boxentäsch ass eng interaktiv App fir zu all Moment nozeliesen, wéi een waat am Letzebuergësche schréift!
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="jill.staudt@autisme.lu" href="http://www.autisme.lu">
+        Info-Média - Autisme Luxembourg
     </author>
     <content src="index.html" />
     <access origin="*" />
