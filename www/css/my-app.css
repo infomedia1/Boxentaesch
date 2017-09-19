@@ -8,11 +8,32 @@
 }
 @font-face {
     font-family: "Raleway-Bold";
+    src: url("./raleway/Raleway-Bold.ttf") format("opentype");   
+}
+@font-face {
+    font-family: "Raleway-SemiBold";
     src: url("./raleway/Raleway-SemiBold.ttf") format("opentype");   
 }
 
 html {
 	scroll-behavior: smooth;
+	font-variant-ligatures: none;
+}
+
+
+
+.bold {
+	font-family: "Raleway-Bold";
+	/*line-height: 29.5px;
+	vertical-align: bottom;*/
+}
+
+h1 .bold {
+	/*line-height: 41px;*/
+}
+
+.semibold {
+	font-family: "Raleway-SemiBold";
 }
 
 body {
@@ -23,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway-Light';
 	letter-spacing: .05em !important;
 }
-
 /* Your app custom files in this file */
 .view-right {
   border-left: 1px solid #b2b2b2;
@@ -79,6 +99,35 @@ h1, h2, h3, h4, h5, h6 {
 		width:30%;
 	}
 }
+
+.rule {
+	display: list-item;
+	list-style-type: none;
+	margin-left: 2.5em;
+	margin-right: 1.5em;
+	text-align: left;
+}
+
+.remark {
+	text-align: left;
+	margin-right: 1.5em;
+	margin-left: 3em;
+}
+
+.check:before {
+	margin-left:-1.5em;
+	margin-right: 0.5em;
+	content:"\2713\0020";
+}
+.cross:before {
+	margin-left:-1.5em;
+	margin-right: 0.5em;
+	content:"\2717\0020";
+}
+.check, .cross {
+	margin-left:3.0em;
+}
+
 .page-content {
 	padding-top: 0px !important;
 	background-color: rgb(238,244,254);
@@ -177,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #thesideblock {
-	margin-bottom: 56px;
+	margin-bottom: 75px;
 }
 #sidescroller {
 	right: -16px;
@@ -186,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #sidescrollerparent {
 	overflow:hidden;
-	margin-top:56px;
+	margin-top:75px;
 }
 #theselectionbar {
 	position: relative;
@@ -223,10 +272,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .view-right .navbar {
 	background: rgb(45,100,188);
-	background: -moz-linear-gradient(-45deg, rgba(45,100,188,1) 0%, rgba(0,62,117,1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(45,100,188,1) 0%,rgba(0,62,117,1) 100%);
-	background: linear-gradient(135deg, rgba(45,100,188,1) 0%,rgba(0,62,117,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d64bc', endColorstr='#003e75',GradientType=1 );
+	background: -moz-linear-gradient(-45deg, rgba(0,62,117,1) 0%, rgbargba(45,100,188,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(0,62,117,1) 0%,rgba(45,100,188,1) 100%);
+	background: linear-gradient(135deg, rgba(0,62,117,1 0%,)rgba(45,100,188,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e75', endColorstr='#2d64bc',GradientType=1 );
+	height: 75px;
 }
 #theselectionbar .swiper-sub {
 	margin-bottom:0px !important;
