@@ -209,15 +209,27 @@ function initSubselector(hash)
 		}
 		break;
 		case 'O': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'O-OO\');"><span>nn</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N\');"><span>(n)*&#8722;</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N2\');"><span>(n)*</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'O-OO\');"><span>oo</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'O-OU\');"><span>ou</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'O-Ö\');"><span>ö</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'O-ÖÖ\');"><span>öö</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'N-NN': jumppoint=0; break;
-			case 'N-N': jumppoint=1; break;
-			case 'N-N2': jumppoint=2; break;
+			case 'N-OO': jumppoint=0; break;
+			case 'N-OU': jumppoint=1; break;
+			case 'N-Ö': jumppoint=2; break;
+			case 'N-ÖÖ': jumppoint=3; break;
+		}
+		break;
+		case 'P': 
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'P-PP\');"><span>pp</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'P-PF\');"><span>pf</span></div>''];
+						setoldhash=hash[0];
+		switch(hash)
+		{
+			case 'P-PP': jumppoint=0; break;
+			case 'P-PF': jumppoint=1; break;
 		}
 		break;
 		case 'Z': 
