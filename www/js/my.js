@@ -216,15 +216,15 @@ function initSubselector(hash)
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'N-OO': jumppoint=0; break;
-			case 'N-OU': jumppoint=1; break;
-			case 'N-Ö': jumppoint=2; break;
-			case 'N-ÖÖ': jumppoint=3; break;
+			case 'O-OO': jumppoint=0; break;
+			case 'O-OU': jumppoint=1; break;
+			case 'O-Ö': jumppoint=2; break;
+			case 'O-ÖÖ': jumppoint=3; break;
 		}
 		break;
 		case 'P': 
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'P-PP\');"><span>pp</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'P-PF\');"><span>pf</span></div>''];
+						'<div class="swiper-slide" onclick="getContent(\'P-PF\');"><span>pf</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
