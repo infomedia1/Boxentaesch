@@ -7,8 +7,8 @@
     <author email="infomedia@autisme.lu" href="http://www.autisme.lu">
         Info-Média - Autisme Luxembourg
     </author>
-	<preference name="pgb-builder-version" value="2" />
-    <preference name="phonegap-version" value="cli-7.0.1" />
+	<preference name="pgb-builder-version" value="1" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -25,7 +25,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-	
+	<preference name="BackupWebStorage" value="none" />
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
     <plugin name="cordova-plugin-console" spec="~1.0.7" />
