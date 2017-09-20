@@ -18,6 +18,9 @@
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "com.konterbont.boxentaesch"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.konterbont.boxentaesch"
         }
     },
     "dependent_plugins": {
