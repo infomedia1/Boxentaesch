@@ -3,7 +3,11 @@
     "version": "0.7.2",
     "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
     "cordova": {
-        "platforms": [],
+        "platforms": [
+            "android",
+            "browser",
+            "ios"
+        ],
         "plugins": {
             "cordova-plugin-console": {},
             "cordova-plugin-media": {},
@@ -13,6 +17,9 @@
         }
     },
     "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-ios": "^4.4.0",
         "cordova-plugin-console": "~1.0.7",
         "cordova-plugin-media": "~3.0.1",
         "cordova-plugin-splashscreen": "~4.0.3",
