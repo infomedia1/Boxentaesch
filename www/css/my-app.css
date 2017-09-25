@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 	/* background-image: url('res/logo_kb.png'); */
 	/* margin-right:10%; */
 	width:80%;
+	margin-bottom: 10%;
 }
 .logolod {
 	/* background-image: url('res/LOD_logo_white-lu.png'); */
@@ -92,14 +93,19 @@ h1, h2, h3, h4, h5, h6 {
 	.logokonterbont {
 		/* background-image: url('res/logo_kb.png'); */
 		margin-right:10%;
+		margin-top:20%;
+		margin-bottom: 0%;
 		width:35%;
 	}
 	.logolod {
 		/* background-image: url('res/LOD_logo_white-lu.png'); */
 		width:30%;
+		margin-top:20%;
 	}
 }
-
+.popuph1, .popuph2 {
+	margin: 5%;
+}
 .rule {
 	display: list-item;
 	list-style-type: none;
@@ -136,6 +142,23 @@ h1, h2, h3, h4, h5, h6 {
 .content-block {
 	position: relative;
 }
+
+.content-block-popup {
+	height: 90%;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.content-block-button {
+	position: absolute;
+    bottom: 0;
+    width: 90%;
+    /* text-align: center; */
+    /* align-content: center; */
+    margin: auto;
+    right: 5%;
+}
+
 .content-block-inner{
 	background-color:rgba(238,244,254,0);
 	color:rgb(83,74,59);
