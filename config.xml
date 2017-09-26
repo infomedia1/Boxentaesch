@@ -38,7 +38,7 @@
         <splash density="port-xxhdpi" src="ressourceimages/screens/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="ressourceimages/screens/android/drawable-port-xxxhdpi-screen.png" />
         <preference name="android-minSdkVersion" value="15" />
-		<resource-file src="google-services.json" target="google-services.json" />
+		<resource-file src="google-services.json" target="/google-services.json" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
