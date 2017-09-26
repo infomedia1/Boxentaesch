@@ -431,3 +431,14 @@ $$(document).on('click', '.tutorial-next-link', function (e) {
 $$(document).on('click', '.tutorial-previous-slide', function (e) {
   welcomescreen.previous(); 
 });
+
+
+
+myApp.onPageInit('index', function() {
+	window.FirebasePlugin.getToken(function(token) {
+		// save this server-side and use it to push notifications to this device
+		alert(token);
+	}, function(error) {
+		alert(error);
+	});
+}).trigger();

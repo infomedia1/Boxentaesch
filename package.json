@@ -4,23 +4,21 @@
     "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
     "cordova": {
         "platforms": [
-            "android",
-            "browser",
-            "ios"
+            "browser"
         ],
         "plugins": {
             "cordova-plugin-console": {},
             "cordova-plugin-media": {},
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-firebase": {}
         }
     },
     "dependencies": {
-        "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
-        "cordova-ios": "^4.4.0",
         "cordova-plugin-console": "~1.0.7",
+        "cordova-plugin-firebase": "^0.1.24",
         "cordova-plugin-media": "~3.0.1",
         "cordova-plugin-splashscreen": "~4.0.3",
         "cordova-plugin-statusbar": "~1.0.1",
