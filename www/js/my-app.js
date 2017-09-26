@@ -1,6 +1,49 @@
 // Initialize your app
 var $$ = Dom7;
 
+
+var setupPush = function() {
+	console.log('calling push init');
+	var push = PushNotification.init({
+		"android": {
+			"senderID": "279763484982"
+		},
+		"browser": {},
+		"ios": {
+			"sound": true,
+			"vibration": true,
+			"badge": true
+		},
+		"windows": {}
+	});
+	console.log('after init');
+
+	push.on('registration', function(data) {
+		console.log('registration event: ' + data.registrationId);
+		alert('registrationid: '+data.registrationId);
+		var oldRegId = localStorage.getItem('registrationId');
+		if (oldRegId !== data.registrationId) {
+			// Save new registration ID
+			localStorage.setItem('registrationId', data.registrationId);
+			// Post registrationId to your app server as the value has changed
+		}
+	});
+
+	push.on('error', function(e) {
+		console.log("push error = " + e.message);
+	});
+
+	push.on('notification', function(data) {
+		console.log('notification event');
+		navigator.notification.alert(
+			data.message,         // message
+			null,                 // callback
+			data.title,           // title
+			'Ok'                  // buttonName
+		);
+   });
+}
+
 var template = $$('#eisbuchstaawen').html();
 var compiledTemplate = Template7.compile(template);
 // Now we may render our compiled template by passing required context
@@ -353,8 +396,14 @@ var myApp = new Framework7({
     },
     onAjaxComplete: function (xhr) {
         myApp.hideIndicator();
-    }
+		setupPush();
+    },
+	onPageInit: function (page) {
+		//setupPush();
+	}
 });
+
+//document.addEventListener("deviceready", onDeviceReady, false);
 
 // Export selectors engine
 
@@ -389,7 +438,6 @@ var mySwiperSub = myApp.swiper('.swiper-sub', {
   centeredSlides: true,
   zoom: true
 });
-
 
 var tour = localStorage.getItem("tour");
 if (!tour || tour == "0") {
@@ -432,14 +480,32 @@ $$(document).on('click', '.tutorial-previous-slide', function (e) {
   welcomescreen.previous(); 
 });
 
+		
 
 /*
 myApp.onPageInit('index', function() {
-	window.FirebasePlugin.getToken(function(token) {
-		// save this server-side and use it to push notifications to this device
-		alert(token);
-	}, function(error) {
-		alert(error);
-	});
+    
 }).trigger();
 */
+		
+		
+		/*
+ push.on('registration', function(data) {
+            console.log('registration event: ' + data.registrationId);
+
+            var oldRegId = localStorage.getItem('registrationId');
+            if (oldRegId !== data.registrationId) {
+                // Save new registration ID
+                localStorage.setItem('registrationId', data.registrationId);
+                // Post registrationId to your app server as the value has changed
+            }
+
+		
+			
+			$$('#thecontent').html($$('#thecontent').html + '<h1>'+data.registrationId+'</h1>');
+		
+        });		
+		*/
+
+
+

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.konterbont.boxentaesch" version="0.7.12" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.konterbont.boxentaesch" version="0.7.14" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Lëtzebuergesch fir an d'Boxentäsch</name>
     <description>
        Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Reegelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
@@ -38,11 +38,11 @@
         <splash density="port-xxhdpi" src="ressourceimages/screens/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="ressourceimages/screens/android/drawable-port-xxxhdpi-screen.png" />
         <preference name="android-minSdkVersion" value="15" />
-		<resource-file src="google-services.json" target="/google-services.json" />
+        <resource-file src="google-services.json" target="/google-services.json" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
-		<resource-file src="GoogleService-Info.plist" />
+        <resource-file src="GoogleService-Info.plist" />
         <icon height="57" platform="ios" src="ressourceimages/icons/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="ressourceimages/icons/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="ressourceimages/icons/ios/icon-40.png" width="40" />
@@ -74,17 +74,15 @@
     </platform>
     <preference name="BackupWebStorage" value="none" />
     <preference name="DisallowOverscroll" value="true" />
+    <gap:config-file mode="add" parent="ITSAppUsesNonExemptEncryption" platform="ios">
+        <false />
+    </gap:config-file>
+    <preference name="android-build-tool" value="gradle" />
+    <engine name="browser" spec="^4.1.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.7" />
     <plugin name="cordova-plugin-media" spec="~3.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
-    <engine name="browser" spec="~4.1.0" />
-    <gap:config-file mode="add" parent="ITSAppUsesNonExemptEncryption" platform="ios">
-        <false />
-    </gap:config-file>
-	<preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" spec="^2.0.0" >
-		<param name="SENDER_ID" value="279763484982" />
-	</plugin>
+    <plugin name="phonegap-plugin-push" spec="^2.0.0" />
 </widget>
