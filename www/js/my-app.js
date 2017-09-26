@@ -31,16 +31,18 @@ var setupPush = function() {
 
 	push.on('error', function(e) {
 		console.log("push error = " + e.message);
+		alert('O.o Feeler: PUSH.ON ERROR');
 	});
 
 	push.on('notification', function(data) {
 		console.log('notification event');
-		navigator.notification.alert(
+		alert('Hei kennt eng Notification!!!!');
+		/*navigator.notification.alert(
 			data.message,         // message
 			null,                 // callback
 			data.title,           // title
 			'Ok'                  // buttonName
-		);
+		);*/
    });
 }
 
