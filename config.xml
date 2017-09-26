@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.konterbont.boxentaesch" version="0.7.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.konterbont.boxentaesch" version="0.7.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Lëtzebuergesch fir an d'Boxentäsch</name>
     <description>
        Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Reegelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
@@ -80,4 +80,7 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
     <engine name="browser" spec="~4.1.0" />
     <plugin name="cordova-plugin-firebase" spec="^0.1.24" />
+	<gap:config-file platform="ios" parent="ITSAppUsesNonExemptEncryption" mode="add">
+		<false/>
+	</gap:config-file>
 </widget>
