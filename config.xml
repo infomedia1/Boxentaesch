@@ -38,7 +38,8 @@
         <splash density="port-xxhdpi" src="ressourceimages/screens/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="ressourceimages/screens/android/drawable-port-xxxhdpi-screen.png" />
         <preference name="android-minSdkVersion" value="15" />
-        <resource-file src="google-services.json" target="assets/containers/google-services.json" />
+		<preference name="android-build-tool" value="gradle" />
+        <resource-file src="google-services.json" target="google-services.json" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
@@ -77,7 +78,7 @@
     <gap:config-file mode="add" parent="ITSAppUsesNonExemptEncryption" platform="ios">
         <false />
     </gap:config-file>
-    <preference name="android-build-tool" value="gradle" />
+    
     <engine name="browser" spec="^4.1.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.7" />
     <plugin name="cordova-plugin-media" spec="~3.0.1" />
