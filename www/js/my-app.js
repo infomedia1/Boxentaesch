@@ -1,9 +1,10 @@
 // Initialize your app
 var $$ = Dom7;
 
-var push;
+
 
 var setupPush = function() {
+	var push;
 	console.log('calling push init');
 	push = PushNotification.init({
 		"android": {
@@ -21,11 +22,12 @@ var setupPush = function() {
 
 	push.on('registration', function(data) {
 		console.log('registration event: ' + data.registrationId);
-		alert('registrationid: '+data.registrationId);
+		alert('registrationid: '+data.registrationId+ ' type: '+data.registrationType);
 		var oldRegId = localStorage.getItem('registrationId');
 		if (oldRegId !== data.registrationId) {
 			// Save new registration ID
 			localStorage.setItem('registrationId', data.registrationId);
+			localStorage.setItem('registrationType', data.registrationType);
 			// Post registrationId to your app server as the value has changed
 		}
 	});
@@ -38,13 +40,21 @@ var setupPush = function() {
 	push.on('notification', function(data) {
 		console.log('notification event');
 		alert('Hei kennt eng Notification!!!!');
-		/*navigator.notification.alert(
+		navigator.notification.alert(
 			data.message,         // message
 			null,                 // callback
 			data.title,           // title
 			'Ok'                  // buttonName
-		);*/
+		);
    });
+   push.subscribe('test', function() {
+		console.log('success');
+		alert('SUBSCRIBE TO test' );
+	}, function(e) {
+		console.log('error:');
+		alert('error subscribe');
+		console.log(e);
+	});
 }
 
 var template = $$('#eisbuchstaawen').html();
