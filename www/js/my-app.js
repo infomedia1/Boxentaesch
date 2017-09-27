@@ -39,7 +39,7 @@ var setupPush = function() {
 
 	push.on('notification', function(data) {
 		console.log('notification event');
-		alert('Hei kennt eng Notification!!!!');
+		//alert('Hei kennt eng Notification!!!!');
 		navigator.notification.alert(
 			data.message,         // message
 			null,                 // callback
