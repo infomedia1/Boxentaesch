@@ -84,5 +84,7 @@
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
-    <plugin name="phonegap-plugin-push" spec="^2.0.0" />
+    <plugin name="phonegap-plugin-push" source="npm" spec="^2.0.0" >
+		<param name="SENDER_ID" value="279763484982" />
+	</plugin>
 </widget>
