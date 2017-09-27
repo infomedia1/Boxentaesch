@@ -1,10 +1,11 @@
 // Initialize your app
 var $$ = Dom7;
 
+var push;
 
 var setupPush = function() {
 	console.log('calling push init');
-	var push = PushNotification.init({
+	push = PushNotification.init({
 		"android": {
 			"senderID": "279763484982"
 		},
