@@ -48,21 +48,21 @@ var setupPush = function() {
 	push.on('notification', function(data) {
 		console.log('notification event');
 		//alert('Hei kennt eng Notification!!!!');
-		var artist = data.additionalData.artist;
+		var artist = data.additionalData.konterbont;
 		 if (artist) {
 		   if (data.additionalData.foreground) {
 			 navigator.notification.confirm(
 			   'Do you want to check out some new music from ' + artist + '?',
 			   function(buttonIndex) {
 				 if (buttonIndex === 1) {
-				   showArtist(artist);
+				  
 				 }
 			   },
 			  'New Music',
 			  ['Yes','No']
 			);
 		   } else {
-			 showArtist(artist);
+			 showStore
 		   }
 		 } else {
 			navigator.notification.alert(
