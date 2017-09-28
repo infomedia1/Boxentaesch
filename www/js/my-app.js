@@ -62,7 +62,7 @@ var setupPush = function() {
 			  ['Yes','No']
 			);
 		   } else {
-			 showStore
+			 showStore();
 		   }
 		 } else {
 			navigator.notification.alert(
