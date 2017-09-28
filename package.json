@@ -1,6 +1,6 @@
 {
     "name": "com.konterbont.boxentaesch",
-    "version": "0.7.2",
+    "version": "0.8.2",
     "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
     "cordova": {
         "platforms": [
@@ -13,15 +13,13 @@
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
             "cordova-plugin-whitelist": {},
-            "phonegap-plugin-push": {},
-            "cordova-plugin-fcm": {}
+            "phonegap-plugin-push": {}
         }
     },
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
         "cordova-plugin-console": "~1.0.7",
-        "cordova-plugin-fcm": "^2.1.2",
         "cordova-plugin-media": "~3.0.1",
         "cordova-plugin-splashscreen": "~4.0.3",
         "cordova-plugin-statusbar": "~1.0.1",

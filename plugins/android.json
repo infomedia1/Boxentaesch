@@ -22,9 +22,6 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.konterbont.boxentaesch"
         },
-        "cordova-plugin-fcm": {
-            "PACKAGE_NAME": "com.konterbont.boxentaesch"
-        },
         "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.konterbont.boxentaesch"
         }
