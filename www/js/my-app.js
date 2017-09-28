@@ -5,7 +5,7 @@ var $$ = Dom7;
 
 var setupPush = function() {
 	var push;
-	console.log('calling push init');
+	/*console.log('calling push init');
 	push = PushNotification.init({
 		"android": {
 			"senderID": "279763484982"
@@ -81,6 +81,7 @@ var setupPush = function() {
 		//alert('error subscribe');
 		console.log(e);
 	});
+	*/
 }
 
 function showStore()
