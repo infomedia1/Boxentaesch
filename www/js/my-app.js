@@ -14,7 +14,15 @@ var setupPush = function() {
 		"ios": {
 			"sound": true,
 			"vibration": true,
-			"badge": true
+			"badge": true,
+			   "categories": {
+				 "konterbont": {
+					 "yes": {
+						 "callback": "showStore", "title": "Méi Infoën",
+						 "foreground": true, "destructive": false
+					 }
+				 }
+			   }
 		},
 		"windows": {}
 	});
@@ -40,22 +48,62 @@ var setupPush = function() {
 	push.on('notification', function(data) {
 		console.log('notification event');
 		//alert('Hei kennt eng Notification!!!!');
-		navigator.notification.alert(
-			data.message,         // message
-			null,                 // callback
-			data.title,           // title
-			'Ok'                  // buttonName
-		);
+		var artist = data.additionalData.artist;
+		 if (artist) {
+		   if (data.additionalData.foreground) {
+			 navigator.notification.confirm(
+			   'Do you want to check out some new music from ' + artist + '?',
+			   function(buttonIndex) {
+				 if (buttonIndex === 1) {
+				   showArtist(artist);
+				 }
+			   },
+			  'New Music',
+			  ['Yes','No']
+			);
+		   } else {
+			 showArtist(artist);
+		   }
+		 } else {
+			navigator.notification.alert(
+				data.message,         // message
+				null,                 // callback
+				data.title,           // title
+				'Ok'                  // buttonName
+			);
+		 }
    });
    push.subscribe('test', function() {
 		console.log('success');
-		alert('SUBSCRIBE TO test' );
+		//alert('SUBSCRIBE TO test' );
 	}, function(e) {
 		console.log('error:');
-		alert('error subscribe');
+		//alert('error subscribe');
 		console.log(e);
 	});
 }
+
+function showStore()
+{
+	alert("ShowStoreFunction");
+}
+
+function gotoAppStore(AppStoreID,PlayStoreID)
+{
+	if (cordova.platformId=='android')
+	{
+		//Android PlayStore Link
+		alert("Android : id = " + PlayStoreID);
+		window.open('market://details?id='+PlayStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+	}
+	if (cordova.platformId=='iOS')
+	{
+		//IOS Store
+		alert("IOS : id = " + AppStoreID);
+		window.open('itms-apps://itunes.apple.com/app/id'+AppStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+	}
+}
+
 
 var template = $$('#eisbuchstaawen').html();
 var compiledTemplate = Template7.compile(template);
