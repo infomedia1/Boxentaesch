@@ -97,7 +97,7 @@ function gotoAppStore(AppStoreID,PlayStoreID)
 		alert("Android : id = " + PlayStoreID);
 		window.open('market://details?id='+PlayStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
 	}
-	if (cordova.platformId=='iOS')
+	if (cordova.platformId=='ios')
 	{
 		//IOS Store
 		alert("IOS : id = " + AppStoreID);
