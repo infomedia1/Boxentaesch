@@ -1,7 +1,8 @@
 var oldhash;
 function closespeeddial(){document.getElementById('thespeeddial').setAttribute('class','speed-dial');}
-function resetApp(){getContent('start'); setupPush()
-	;gotoAppStore("appstoreid-213","com.konterbont.boxentaesch");}
+function resetApp(){getContent('start'); setupPush();
+	gotoAppStore("id1200014540","com.uprui.launcher.marshmallow");}
+	//;gotoAppStore("id1200014540","com.konterbont.boxentaesch");}
 function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
 function openpage(siteurl){var onInApp = window.open('http://'+siteurl, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');}
 function playAudio(audioid)
