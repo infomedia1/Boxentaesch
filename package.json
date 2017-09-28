@@ -9,11 +9,13 @@
             "cordova-plugin-media": {},
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-market": {}
         }
     },
     "dependencies": {
         "cordova-plugin-console": "~1.0.7",
+        "cordova-plugin-market": "^1.2.0",
         "cordova-plugin-media": "~3.0.1",
         "cordova-plugin-splashscreen": "~4.0.3",
         "cordova-plugin-statusbar": "~1.0.1",

@@ -94,14 +94,18 @@ function gotoAppStore(AppStoreID,PlayStoreID)
 	if (cordova.platformId=='android')
 	{
 		//Android PlayStore Link
-		alert("Android : id = " + PlayStoreID);
-		window.open('market://details?id='+PlayStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+		//alert("Android : id = " + PlayStoreID);
+		//window.open("http://play.google.com/store/apps/details?id="+PlayStoreID);
+		console.log("android open store");
+		cordova.plugins.market.open(PlayStoreID);
 	}
 	if (cordova.platformId=='ios')
 	{
 		//IOS Store
-		alert("IOS : id = " + AppStoreID);
-		window.open('itms-apps://itunes.apple.com/app/id'+AppStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+		//alert("IOS : id = " + AppStoreID);
+		console.log("ios open store");
+		cordova.plugins.market.open(AppStoreID);
+		//window.open('itms-apps://itunes.apple.com/app/id'+AppStoreID,'_blank','location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
 	}
 }
 
