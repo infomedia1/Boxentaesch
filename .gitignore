@@ -1,3 +1,5 @@
+node_modules
+
 # Mac
 .DS_Store
 
@@ -46,3 +48,5 @@ platforms/browser
 platforms/
 
 plugins/browser\.json
+
+node_modules/

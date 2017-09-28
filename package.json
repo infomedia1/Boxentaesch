@@ -4,6 +4,7 @@
     "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
     "cordova": {
         "platforms": [
+            "android",
             "browser"
         ],
         "plugins": {
@@ -17,6 +18,7 @@
         }
     },
     "dependencies": {
+        "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
         "cordova-plugin-console": "~1.0.7",
         "cordova-plugin-fcm": "^2.1.2",
