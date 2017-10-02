@@ -39,6 +39,7 @@ h1 .bold {
 body {
 	font-family: "Raleway";
 	text-align:center;
+	background-color: #6c767b;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway-Light';
@@ -241,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .swiper-sub .swiper-wrapper {
-	height: 50px;
+	height: 20px;
 }
 .swiper-sub .swiper-wrapper div span {
 	margin-top: 0 !important;
@@ -290,6 +291,22 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0px;
 	pointer-events: none;
 }
+
+#theselectionbar:after {
+	content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #c4c4c4;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
 .subnavbar {
 	height: 75px;
 }
@@ -307,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom:15px;
 }
 #theselectionbar #swiper-sub {
-	height: 50px;
+	height: 20px;
 }
 #theselectionbar .swiper-slide {
   background: rgba(0,0,0,0);
@@ -319,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align:center;
   display:block;
   /* margin: 20px; */
-  font-size:42px;
+  font-size:20px;
   font-family: 'Raleway-Light';
 }
 #theselectionbar .swiper-3 .swiper-wrapper .swiper-slide span {

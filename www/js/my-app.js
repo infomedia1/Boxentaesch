@@ -546,8 +546,11 @@ $$(document).on('click', '.tutorial-previous-slide', function (e) {
   welcomescreen.previous(); 
 });
 
-		
-
+/*
+$$(document).on('click', 'icon-bars', function (e) {
+	$$('.tab-link').attr('height','0px');
+});		
+*/
 /*
 myApp.onPageInit('index', function() {
     

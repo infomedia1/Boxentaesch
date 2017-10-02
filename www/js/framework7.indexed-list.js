@@ -93,8 +93,9 @@ Framework7.prototype.plugins.indexedlist = function (app, params) {
         function scrollToLetter(letter) {
             var scrollToEl = pageContent.find('.list-group ul li[data-index-letter="' + letter + '"]').parent();
             if (!scrollToEl.length) return;
-            var scrollTop = scrollToEl.offset().top + pageContent.scrollTop() - (fixedNavbar ? 44 : 0) - (searchBar ? 44 : 0) -56;
+            var scrollTop = scrollToEl.offset().top + pageContent.scrollTop() - (fixedNavbar ? 44 : 0) - (searchBar ? 44 : 0) -75;
             pageContent.scrollTop(scrollTop);
+			console.log("SCROLL");
         }
 
         eventsTarget.on(app.touchEvents.start, handleTouchStart);
