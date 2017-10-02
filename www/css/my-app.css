@@ -179,6 +179,12 @@ h1, h2, h3, h4, h5, h6 {
 	background-color:rgb(194,135,82);
 	height: 75px;
 }
+
+.button
+{
+	font-size:25px;
+	line-height:75px;
+}
 .no-player
 {
 	opacity:0 !important;
