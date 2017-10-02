@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .button
 {
 	font-size:25px;
-	line-height:75px;
+	line-height:3em;
 }
 .no-player
 {
