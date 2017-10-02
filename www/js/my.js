@@ -388,7 +388,7 @@ function getContent(contentid)
 			thecontentrule+='<h2>Remark</h2><p class="remark">De Konsonant hannert der Vokalkoppel gëtt ni verduebelt.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		case 'B' : thecontentbox="<h1><span class=\"bold\">b</span> vir an an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b');\">&nbsp;</p></div></div>";
+		case 'B' : thecontentbox="<h1><span class=\"bold\">b</span> vir oder an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
 			thecontentrule='<h1>Regel zu b</h1>';
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den &lt;b&gt; mëll ausgeschwat.</p>';
