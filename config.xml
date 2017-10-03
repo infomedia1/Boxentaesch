@@ -40,6 +40,7 @@
         <splash density="port-xxxhdpi" src="ressourceimages/screens/android/drawable-port-xxxhdpi-screen.png" />
         <preference name="android-minSdkVersion" value="15" />
         <preference name="android-build-tool" value="gradle" />
+		<preference name="SplashScreen" value="screen" />
         <resource-file src="google-services.json" target="google-services.json" />
         <allow-intent href="market:*" />
     </platform>
