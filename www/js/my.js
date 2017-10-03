@@ -367,7 +367,7 @@ function getContent(contentid)
 			break;
 			case 'A-AU' : thecontentbox="<h1>Buchstaaf au</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>D<span class=\"bold\">au</span>f<br>kl<span class=\"bold\">au</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a-au');\">&nbsp;</p></div></div><div class=\"floating-container\"><div class=\"left-content-block\"><h2>B<span class=\"bold\">au</span>ch<br>F<span class=\"bold\">au</span>scht</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a-au2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu au</h1>';
-			thecontentrule+='<p class="rule check">Den&lt;au&gt; ass eng Vokalkoppel a kann net getrennt ginn.</p>';
+			thecontentrule+='<p class="rule check">Den &lt;au&gt; ass eng Vokalkoppel a kann net getrennt ginn.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">De Konsonant hannert der Vokalkoppel gëtt ni verduebelt.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;

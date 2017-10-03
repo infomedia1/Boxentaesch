@@ -119,24 +119,38 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 2.5em;
 	margin-right: 1.5em;
 	text-align: left;
-	font-weight: normal;
+	font-weight: 300;
+	font-size: 1.2em;
 }
 
 .remark {
 	text-align: left;
 	margin-right: 1.5em;
 	margin-left: 3em;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+.remark:before {
+	margin-left:-1.5em;
+	margin-right: 0.5em;
+	content:"\2755\0020";
+	font-weight: 300;
+	font-size: 1.2em;
 }
 
 .check:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2713\0020";
+	content:"\2754\0020";
+	font-weight: 300;
+	font-size: 1.2em;
 }
 .cross:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2717\0020";
+	content:"\2718\0020";
+	font-weight: 300;
+	font-size: 1.2em;
 }
 .check, .cross {
 	margin-left:3.0em;
