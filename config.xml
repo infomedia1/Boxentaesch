@@ -18,6 +18,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <icon src="icon.png" />
+	<splash src="splash.png" />
     <platform name="android">
         <icon density="ldpi" src="ressourceimages/icons/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="ressourceimages/icons/android/drawable-mdpi-icon.png" />
