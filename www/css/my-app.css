@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 .remark:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2755\0020";
+	content:"\2755";
 	font-weight: 300;
 	font-size: 1.2em;
 }
@@ -141,14 +141,14 @@ h1, h2, h3, h4, h5, h6 {
 .check:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2754\0020";
+	content:"\2754";
 	font-weight: 300;
 	font-size: 1.2em;
 }
 .cross:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2718\0020";
+	content:"\2718";
 	font-weight: 300;
 	font-size: 1.2em;
 }
