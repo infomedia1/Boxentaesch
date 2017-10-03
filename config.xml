@@ -76,6 +76,11 @@
     </platform>
     <preference name="BackupWebStorage" source="npm" value="none" />
     <preference name="DisallowOverscroll" source="npm" value="true" />
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="FadeSplashScreenDuration" value="750"/>
+	<preference name="SplashShowOnlyFirstTime" value="false" />
+
     <plugin name="cordova-plugin-console" source="npm" spec="~1.1.0" />
     <plugin name="cordova-plugin-media" source="npm" spec="~3.0.1" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.3" />
