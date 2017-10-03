@@ -913,7 +913,7 @@ function getContent(contentid)
 			thecontentrule+='<p class="rule check">De Konsonantegrupp &lt;tz&gt; gëtt an der Mëtt an um Enn vum Wuert wéi &lt;t&gt; an &lt;s&gt; geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dreck op e Buschtaaf fir déi entspriechend Wierder, souwie och d'Reegelen ugewissen ze kréien.</h2>";
+		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dreck op e Buschtaaf fir déi entspriechend Wierder, souwie och d'Regelen ugewissen ze kréien.</h2>";
 			thecontentrule='<h1>Eng Zesummenaarbëscht vun</h1><h2>Autisme Luxembourg a.s.b.l.</h2><h2>Lëtzebuerger Online Dictionnaire</h2>';
 			result='start';
 			$$('#thesubnavbar').addClass('hide-tabbar');

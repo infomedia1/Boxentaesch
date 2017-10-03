@@ -23,9 +23,10 @@ html {
 
 
 .bold {
-	font-family: "Raleway-Bold";
+	/* font-family: "Raleway-Bold"; */
 	/*line-height: 29.5px;
 	vertical-align: bottom;*/
+	font-weight: bold;
 }
 
 h1 .bold {
@@ -33,17 +34,21 @@ h1 .bold {
 }
 
 .semibold {
-	font-family: "Raleway-SemiBold";
+	/* font-family: "Raleway-SemiBold"; */
+	font-weight: bolder;
 }
 
 body {
-	font-family: "Raleway";
+	/* font-family: "Raleway"; */
 	text-align:center;
 	background-color: #6c767b;
+	font-weight: normal;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway-Light';
-	letter-spacing: .05em !important;
+	/* font-family: 'Raleway-Light'; */
+	/* letter-spacing: .05em !important; */
+	font-weight: 300;
+	/* font-weight: normal; */
 }
 /* Your app custom files in this file */
 .view-right {
@@ -74,9 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-container {
 	transition: height .4s ease;
 }
+.tabs-swipeable-wrap {
+	height: auto !important;
+}
 .tabcontainer{
-	margin-left:-16px;
-	margin-right:-16px;
 	display:block;
 	position: relative;
 }
@@ -113,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 2.5em;
 	margin-right: 1.5em;
 	text-align: left;
+	font-weight: normal;
 }
 
 .remark {
@@ -139,11 +146,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 0px !important;
 	background-color: rgb(238,244,254);
 	color:rgb(83,74,59);
+	/* height: calc(100% - 50px); */
 }
-.content-block {
+.content-block ,.innercontent-block {
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
-
+.content-block{
+	height:100%;
+}
 .content-block-popup {
 	height: 90%;
 	margin-bottom: 0px !important;
@@ -163,6 +175,8 @@ h1, h2, h3, h4, h5, h6 {
 .content-block-inner{
 	background-color:rgba(238,244,254,0);
 	color:rgb(83,74,59);
+	padding: 32px 0;
+	margin: 0 !important;
 }
 .subnavbar {
 	top: 0px !important;
@@ -259,8 +273,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 75px;
 }
 #sidescroller {
-	right: -16px;
-    margin-left: -16px;
 	/* top: 56px; */
 }
 #sidescrollerparent {
@@ -269,9 +281,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #theselectionbar {
 	position: relative;
-	margin-left: -16px;
-    margin-right: -16px;
-    margin-top: -35px;
+	/* margin-left: -16px; */
+    /* margin-right: -16px; */
+    /* margin-top: -35px; */
 	padding-top: 1px;
 	/* placeholder color */
 	background: rgb(45,100,188);
@@ -314,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
     transform-origin: 50% 100%;
 }
 .subnavbar {
-	height: 75px;
+	height: 77px;
 }
 .view-right .navbar {
 	background: rgb(45,100,188);
@@ -322,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: -webkit-linear-gradient(-45deg, rgba(0,62,117,1) 0%,rgba(45,100,188,1) 100%);
 	background: linear-gradient(135deg, rgba(0,62,117,1 0%,)rgba(45,100,188,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e75', endColorstr='#2d64bc',GradientType=1 );
-	height: 75px;
+	height: 77px;
 }
 #theselectionbar .swiper-sub {
 	margin-bottom:0px !important;
@@ -343,7 +355,8 @@ h1, h2, h3, h4, h5, h6 {
   display:block;
   /* margin: 20px; */
   font-size:20px;
-  font-family: 'Raleway-Light';
+  /* font-family: 'Raleway-Light'; */
+  font-weight: 300;
 }
 #theselectionbar .swiper-3 .swiper-wrapper .swiper-slide span {
 	font-size: 55px;
@@ -365,7 +378,7 @@ h1, h2, h3, h4, h5, h6 {
 	width:15%;
 	display: table-cell;
 	vertical-align: middle;
-	font-size:48px;
+	/* font-size:48px; */
 }
 .round-play-button {
 	-moz-border-radius: 50%;
@@ -383,6 +396,9 @@ h1, h2, h3, h4, h5, h6 {
 	/* fill: #fff; */
 	/* -webkit-filter: invert(100%);  */
 	/* filter: invert(100%); */
+	position: relative;
+    right: 14px;
+    float: right;
 }
 
 .floating-container {
