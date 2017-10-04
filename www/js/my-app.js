@@ -7,12 +7,13 @@ var Player = {
 	initMedia: function (path) {
 		Player.media = new Media(path,
 								function () {
-									$$('#audioplayer').addClass('no-player');
-									console.log('audio success');
-									if ((Player.media !== null) and (Player.isPlaying==false))
+									
+									if (Player.media !== null)
 									{
-										Player.media.release;
+										Player.media.release();
 										Player.isPlaying = false;
+										$$('#audioplayer').addClass('no-player');
+										console.log('audio success');
 									}
 									if (Player.isPlaying==true)
 									{
@@ -26,7 +27,7 @@ var Player = {
 							);
 	},
 	play: function(path) {
-		Player.isPlaying = false;
+		
 		if (cordova.platformId=='android') {
 			var mediasrc='/android_asset/www/audio/';
 		} else {
@@ -45,6 +46,8 @@ var Player = {
 				Player.isPlaying = false;
 			}
 			Player.media.release();
+			Player.media = null;
+			Player.isPlaying = false;
 		}
 		$$('#audioplayer').removeClass('no-player');
 		Player.initMedia(path);
