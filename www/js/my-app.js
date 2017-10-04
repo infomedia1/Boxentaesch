@@ -16,13 +16,12 @@ var Player = {
 									}
 								},
 								function(error) {
-									$$('#audioplayer').addClass('no-player');
-									console.log('audio error');
-									Player.stop;
+									alert('error');
 								}
 							);
 	},
 	play: function(path) {
+		Player.isPlaying = false;
 		if (cordova.platformId=='android') {
 			var mediasrc='/android_asset/www/audio/';
 		} else {
@@ -37,8 +36,8 @@ var Player = {
 			Player.media.stop();
 			Player.media.release();
 		}
-		Player.initMedia(path);
 		$$('#audioplayer').removeClass('no-player');
+		Player.initMedia(path);
 		Player.media.play();
 		Player.isPlaying = true;
 	},

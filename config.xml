@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.konterbont.boxentaesch" version="0.8.13" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.konterbont.boxentaesch" version="0.8.14" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Boxentaesch</name>
     <description>
-       Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Reegelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
+       Lëtzebuergesch fir an d'Boxentäsch ass eng Interaktiv Applikatioun fir d'Regelen vun der Lëtzebuergescher Sprooch besser ze verstoën.
     </description>
     <author email="infomedia@autisme.lu" href="http://www.autisme.lu">
         Info-Média - Autisme Luxembourg
