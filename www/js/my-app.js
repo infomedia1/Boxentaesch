@@ -1,7 +1,52 @@
 // Initialize your app
 var $$ = Dom7;
+var Player = {
+	media: null,
+	mediaTimer: null,
+	isPlaying : false,
+	initMedia: function (path) {
+		Player.media = new Media(path,
+								function () {
+									
+								},
+								function(error) {
+								
+								}
+							);
+	},
+	playPause: function(path) {
+		if (Player.media === null)
+		{
+			Player.initMedia(path);
+			console.log('Init');
+		}
+		
+		if (Player.isPlaying === false)
+		{
+			Player.media.play();
+			console.log('Play');
+		} else {
+			Player.media.pause();
+			console.log('Pause');
+		}
+		Player.isPlaying = !Player.isPlaying;
+	},
+	stop: function() {
+		if (Player.media !== null)
+		{
+			Player.media.stop();
+			console.log('Stop');
+			Player.media.release();
+		}
+		Player.media = null;
+		Player.isPlaying = false;
+	}
+}
 
-
+function prepareAudioPlayer() {
+	console.log('prepare Audioplayer');
+	console.log('Mediaplayer prepared!');
+}
 
 var setupPush = function() {
 	var push;
@@ -459,17 +504,31 @@ var myApp = new Framework7({
 	
 	onAjaxStart: function (xhr) {
         myApp.showIndicator();
+		console.log('Init start');
     },
     onAjaxComplete: function (xhr) {
         myApp.hideIndicator();
-		setupPush();
+		// setupPush();
+		// prepareAudio();
+		console.log('Init complete');
     },
 	onPageInit: function (page) {
 		//setupPush();
 	}
 });
 
-//document.addEventListener("deviceready", onDeviceReady, false);
+if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) 
+{ 
+	document.addEventListener("deviceready", onDeviceReady, false); 
+} else { 
+	onDeviceReady(); 
+}
+function onDeviceReady()
+{
+	console.log('deviceready hook');
+	prepareAudioPlayer();
+	
+};
 
 // Export selectors engine
 
@@ -506,8 +565,7 @@ var mySwiperSub = myApp.swiper('.swiper-sub', {
 });
 
 var tour = localStorage.getItem("tour");
-if (!tour || tour == "0") {
-	var welcomeText = [{
+var welcomeText = [{
 		id: 'slide0',
 		picture: '<div class="tutorialicon">♥</div>',
 		text: 'First slide'
@@ -520,6 +578,7 @@ if (!tour || tour == "0") {
 		picture: '<div class="tutorialicon">♥</div>',
 		text: 'Third slide'
 	}];
+if (!tour || tour == "0") {
 	myApp.welcomescreen(welcomeText, {
 		'bgcolor': '#1e5799',
 		'fontcolor': '#fafafa',
@@ -531,19 +590,38 @@ if (!tour || tour == "0") {
 }
 
 $$(document).on('click', '.tutorial-close-btn', function () {
-  welcomescreen.close();
+  myApp.welcomescreen.close();
 });
 
 $$('.tutorial-open-btn').click(function () {
-  welcomescreen.open();  
+  myApp.welcomescreen.open();  
+});
+
+$$('.logokonterbont').click(function () {
+  openStore();  
+});
+
+$$('#helpbutton').click(function () {
+  if (!tour || tour == "0") {
+	myApp.welcomescreen.open(); 
+  } else {
+	myApp.welcomescreen(welcomeText, {
+		'bgcolor': '#1e5799',
+		'fontcolor': '#fafafa',
+		'closeButtonText': 'iwwersprangen',
+		'onClosed': function() {
+					localStorage.setItem("tour", "1"); // will not make the tour run again
+			}
+	});
+  }
 });
 
 $$(document).on('click', '.tutorial-next-link', function (e) {
-  welcomescreen.next(); 
+  myApp.welcomescreen.next(); 
 });
 
 $$(document).on('click', '.tutorial-previous-slide', function (e) {
-  welcomescreen.previous(); 
+  myApp.welcomescreen.previous(); 
 });
 
 /*

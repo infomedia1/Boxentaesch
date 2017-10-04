@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-content {
 	padding-top: 0px !important;
-	background-color: rgb(238,244,254);
+	background-color: rgb(245,245,245);
 	color:rgb(83,74,59);
 	/* height: calc(100% - 50px); */
 }
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0px !important;
 }
 
-.content-block-button {
+.content-block-button, .content-block-button2 {
 	position: absolute;
     bottom: 0;
     width: 90%;
@@ -184,6 +184,10 @@ h1, h2, h3, h4, h5, h6 {
     /* align-content: center; */
     margin: auto;
     right: 5%;
+}
+
+.content-block-button2{
+	bottom: 60px;
 }
 
 .content-block-inner{
@@ -198,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color:rgb(169,115,65);
 }
 .button.tab-link.active {
-	background-color:rgb(238,244,254);
+	background-color: rgb(243, 231, 221);
 	color:rgb(130,101,78);
 }
 .button.tab-link
