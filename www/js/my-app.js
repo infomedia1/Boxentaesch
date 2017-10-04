@@ -16,7 +16,8 @@ var Player = {
 									}
 								},
 								function(error) {
-									alert('error');
+									//alert('error');
+									console.log('upsi');
 								}
 							);
 	},
@@ -33,7 +34,10 @@ var Player = {
 		
 		if (Player.media != null)
 		{
-			Player.media.stop();
+			if(Player.isPlaying == true)
+			{
+				Player.media.stop();
+			}
 			Player.media.release();
 		}
 		$$('#audioplayer').removeClass('no-player');
