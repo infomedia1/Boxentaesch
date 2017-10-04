@@ -37,11 +37,13 @@ var Player = {
 			if(Player.isPlaying == true)
 			{
 				Player.media.stop();
+				$$('#audioplayer').removeClass('no-player');
 			}
 			Player.media.release();
 		}
 		$$('#audioplayer').removeClass('no-player');
 		Player.initMedia(path);
+		$$('#audioplayer').removeClass('no-player');
 		Player.media.play();
 		Player.isPlaying = true;
 	},
