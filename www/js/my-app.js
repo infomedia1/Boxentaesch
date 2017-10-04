@@ -9,10 +9,14 @@ var Player = {
 								function () {
 									$$('#audioplayer').addClass('no-player');
 									console.log('audio success');
-									if (Player.media !== null)
+									if ((Player.media !== null) and (Player.isPlaying==false))
 									{
 										Player.media.release;
 										Player.isPlaying = false;
+									}
+									if (Player.isPlaying==true)
+									{
+										$$('#audioplayer').removeClass('no-player');
 									}
 								},
 								function(error) {
@@ -38,6 +42,7 @@ var Player = {
 			{
 				Player.media.stop();
 				$$('#audioplayer').removeClass('no-player');
+				Player.isPlaying = false;
 			}
 			Player.media.release();
 		}
