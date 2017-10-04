@@ -7,27 +7,90 @@ var Player = {
 	initMedia: function (path) {
 		Player.media = new Media(path,
 								function () {
-									
+									$$('#audioplayer').addClass('no-player');
+									console.log('audio success');
+									if (Player.media !== null)
+									{
+										Player.media.release;
+										Player.isPlaying = false;
+									}
 								},
 								function(error) {
-								
+									$$('#audioplayer').addClass('no-player');
+									console.log('audio error');
+									Player.stop;
 								}
 							);
 	},
-	playPause: function(path) {
-		if (Player.media === null)
+	play: function(path) {
+		if (cordova.platformId=='android') {
+			var mediasrc='/android_asset/www/audio/';
+		} else {
+			var mediasrc='audio/';
+		}
+		$$('.player-play-icon').html('&#9205;');
+		$$('.bar').css('animation-play-state','running');
+		path=mediasrc + path;
+		
+		if (Player.media != null)
 		{
-			Player.initMedia(path);
+			Player.media.stop();
+			Player.media.release();
+		}
+		Player.initMedia(path);
+		$$('#audioplayer').removeClass('no-player');
+		Player.media.play();
+		Player.isPlaying = true;
+	},
+	pauseResume: function() {
+		if (Player.isPlaying === true)
+		{
+			Player.media.pause();
+			$$('.player-play-icon').html('&#9208;');
+			// $$('.bar').css('display','none');
+			//$$('.bar').css('display','none');
+			$$('.bar').css('animation-play-state','paused');
+		} else {
+			Player.media.play();
+			
+			// $$('.bar').css('display','block');
+			$$('.bar').css('animation-play-state','running');
+		}
+		Player.isPlaying = !Player.isPlaying;
+	},
+	playPause: function(path) {
+		if (cordova.platformId=='android') {
+			var mediasrc='/android_asset/www/audio/';
+		} else {
+			var mediasrc='audio/';
+		}
+		path=mediasrc + path;
+		
+		if ((Player.media === null) || (Player.media.src!=path))
+		{
+			if(Player.isPlaying === true)
+			{
+				console.log('Kill old Player');
+				Player.media.stop();
+				Player.media.release();
+				console.log('2 Init & Play');
+				Player.initMedia(path);
+			} else {
+				console.log('Init & Play');
+				Player.initMedia(path);
+			}
 			console.log('Init');
 		}
 		
 		if (Player.isPlaying === false)
 		{
 			Player.media.play();
-			console.log('Play');
+			console.log('Play: '+Player.media.src+' | '+path);
+			$$('#audioplayer').removeClass('no-player');
 		} else {
 			Player.media.pause();
-			console.log('Pause');
+			console.log('Pause: '+Player.media.src+' | '+path);
+			$$('#audioplayer').removeClass('no-player');
 		}
 		Player.isPlaying = !Player.isPlaying;
 	},
@@ -40,6 +103,7 @@ var Player = {
 		}
 		Player.media = null;
 		Player.isPlaying = false;
+		$$('#audioplayer').addClass('no-player');
 	}
 }
 

@@ -6,22 +6,24 @@ function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(
 function openpage(siteurl){var onInApp = window.open('http://'+siteurl, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');}
 function playAudio(audioid)
 {
-	if (cordova.platformId=='android') {
-		var mediasrc='/android_asset/www/';
-	} else {
-		var mediasrc='';
-	}
 	$$('#audioplayer').removeClass('no-player');
 	
 	//alert(cordova.platformId);
 	//console.log('platform: '+ cordova.platformId);
-	
+	/*
 	var my_media = new Media(mediasrc+'audio/'+audioid+'.mp3', function () {
 						$$('#audioplayer').addClass('no-player');
 					}, function (err) { alert('Feeler: '+err); $$('#audioplayer').addClass('no-player'); }
 				);
 	my_media.play();
+	*/
+	Player.play(audioid+'.mp3');
 }
+
+$$(document).on('click', '.player-play-icon', function (e) {
+  Player.pauseResume(); 
+});
+
 function openStore() {
 	console.log('openstore...');
 	gotoAppStore("id1200014540","com.uprui.launcher.marshmallow");
