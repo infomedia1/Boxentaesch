@@ -239,7 +239,7 @@ var context = {
     buchstaawen: [
 		{ denBuchstaaf: 'A', wierder: [
 			{ wuert: 'aachtmol', jumppoint: 'A-AA' },
-			{ wuert: 'Äerd', jumppoint: 'E-UER' },
+			{ wuert: 'Äerd', jumppoint: 'E-ÄER' },
 			{ wuert: 'Af', jumppoint: 'A' },
 			{ wuert: 'Affekot', jumppoint: 'A' },
 			{ wuert: 'Affiche', jumppoint: 'F-FF' },
@@ -259,19 +259,19 @@ var context = {
 			{ wuert: 'bastelen', jumppoint: 'S-ST' },
 			{ wuert: 'Bauch', jumppoint: 'A-AU' },
 			{ wuert: 'Bauer', jumppoint: 'B' },
-			{ wuert: 'Bëbee', jumppoint: 'E-Ë' },
+			// { wuert: 'Bëbee', jumppoint: 'E-Ë' },
 			{ wuert: 'Béchs', jumppoint: 'E-É' },
 			{ wuert: 'behuelen', jumppoint: 'H' },
 			{ wuert: 'Beleeg', jumppoint: 'G-G3' },
 			{ wuert: 'beroden', jumppoint: 'D' },
 			{ wuert: 'Beruff', jumppoint: 'F-FF' },
-			{ wuert: 'bestueden', jumppoint: 'E-IE' },
+			// { wuert: 'bestueden', jumppoint: 'E-IE' },
 			{ wuert: 'bieden', jumppoint: 'E-IE' },
 			{ wuert: 'Bier', jumppoint: 'R-R' },
 			{ wuert: 'Bierg', jumppoint: 'G-G3' },
 			{ wuert: 'Biischt', jumppoint: 'I-II' },
 			{ wuert: 'Billjee', jumppoint: 'E-EE' },
-			{ wuert: 'blären', jumppoint: 'E-ÄR' },
+			// { wuert: 'blären', jumppoint: 'E-ÄR' },
 			{ wuert: 'Blat', jumppoint: 'T' },
 			{ wuert: 'Bléi', jumppoint: 'E-ÉI' },
 			{ wuert: 'bleiwen', jumppoint: 'E-EI' },
@@ -283,14 +283,14 @@ var context = {
 			{ wuert: 'Bravour', jumppoint: 'V' },
 			{ wuert: 'Buch', jumppoint: 'C-CH' },
 			{ wuert: 'Buchstaf', jumppoint: 'U' },
-			{ wuert: 'Buedem', jumppoint: 'E-IE' },
+			// { wuert: 'Buedem', jumppoint: 'E-UE' },
 			{ wuert: 'bueren', jumppoint: 'E-UER' },
 			{ wuert: 'Bün', jumppoint: 'U-Ü' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'C', wierder: [
 			{ wuert: 'Cabaret', jumppoint: 'C' },
 			{ wuert: 'Cabinet', jumppoint: 'C' },
-			{ wuert: 'Cent', jumppoint: 'C-C' },
+			{ wuert: 'Cent', jumppoint: 'C' },
 			{ wuert: 'Cité', jumppoint: 'E-É2' },
 			{ wuert: 'cool', jumppoint: 'C' },
 			{ wuert: 'Crèche', jumppoint: 'E-È' }
@@ -305,7 +305,7 @@ var context = {
 			{ wuert: 'dënn', jumppoint: 'N-NN' },
 			{ wuert: 'Dëppen', jumppoint: 'E-Ë' },
 			{ wuert: 'dicht', jumppoint: 'I' },
-			{ wuert: 'Dier', jumppoint: 'E-UER' },
+			// { wuert: 'Dier', jumppoint: 'E-UER' },
 			{ wuert: 'Dram', jumppoint: 'M' },
 			{ wuert: 'Drot', jumppoint: 'D' },
 			{ wuert: 'duerch', jumppoint: 'E-UER' },
@@ -313,7 +313,7 @@ var context = {
 			{ wuert: 'duuss', jumppoint: 'S-SS' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'E', wierder: [
-			{ wuert: 'Eeër', jumppoint: 'E-Ë' },
+			{ wuert: 'Eeër', jumppoint: 'E-Ë2' },
 			{ wuert: 'erkalen', jumppoint: 'A' },
 			{ wuert: 'Europa', jumppoint: 'E-EU' }
 		], subBuchstaawen : [
@@ -347,8 +347,8 @@ var context = {
 		{ denBuchstaaf: 'G', wierder: [
 			{ wuert: 'gaapsen', jumppoint: 'A-AA' },
 			{ wuert: 'Gank', jumppoint: 'G-NK' },
-			{ wuert: 'gär', jumppoint: 'E-ÄR' },
-			{ wuert: 'gëeenegt', jumppoint: 'E-Ë' },
+			// { wuert: 'gär', jumppoint: 'E-ÄR' },
+			{ wuert: 'gëeenegt', jumppoint: 'E-Ë2' },
 			{ wuert: 'Gei', jumppoint: 'E-EI' },
 			{ wuert: 'geföönt', jumppoint: 'O-ÖÖ' },
 			{ wuert: 'gekroomt', jumppoint: 'O-OO' },
@@ -356,7 +356,7 @@ var context = {
 			{ wuert: 'gepräägt', jumppoint: 'A-ÄÄ' },
 			{ wuert: 'Gerücht', jumppoint: 'U-Ü' },
 			{ wuert: 'geüübt', jumppoint: 'U-ÜÜ' },
-			{ wuert: 'giereg', jumppoint: 'E-UER' },
+			// { wuert: 'giereg', jumppoint: 'E-UER' },
 			{ wuert: 'Gittar', jumppoint: 'G' },
 			{ wuert: 'Grad', jumppoint: 'D-D' },
 			{ wuert: 'Gromperenzalot', jumppoint: 'N-N2' }
@@ -365,7 +365,7 @@ var context = {
 			{ wuert: 'Haff', jumppoint: 'F-FF' },
 			{ wuert: 'Haiser', jumppoint: 'A-AI' },
 			{ wuert: 'Hex', jumppoint: 'X' },
-			{ wuert: 'Hierscht', jumppoint: 'E-UER' },
+			{ wuert: 'Hierscht', jumppoint: 'E-IER' },
 			{ wuert: 'Hiewel', jumppoint: 'I-IE' },
 			{ wuert: 'Hoer', jumppoint: 'H' },
 			{ wuert: 'Hues', jumppoint: 'U-UE' }
@@ -373,22 +373,22 @@ var context = {
 		{ denBuchstaaf: 'I', wierder: [
 			{ wuert: 'Igel', jumppoint: 'G-G' },
 			{ wuert: 'Informatioun', jumppoint: 'U-OU' },
-			{ wuert: 'Insel', jumppoint: 'I' },
-			{ wuert: 'iren (sech)', jumppoint: 'E-IR' }
+			{ wuert: 'Insel', jumppoint: 'I' }
+			// { wuert: 'iren (sech)', jumppoint: 'E-IR' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'J', wierder: [
 			{ wuert: 'Jackett', jumppoint: 'J' },
-			{ wuert: 'Jeeër', jumppoint: 'E-Ë' },
+			{ wuert: 'Jeeër', jumppoint: 'E-Ë2' },
 			{ wuert: 'jiipsen', jumppoint: 'J' },
 			{ wuert: 'Joer', jumppoint: 'J-J' },
 			{ wuert: 'Jughurt', jumppoint: 'J-J' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'K', wierder: [
 			{ wuert: 'Kabes', jumppoint: 'B' },
-			{ wuert: 'Käerz', jumppoint: 'E-UER' },
+			{ wuert: 'Käerz', jumppoint: 'E-ÄER' },
 			{ wuert: 'kal', jumppoint: 'L' },
 			{ wuert: 'Kanner', jumppoint: 'N-NN' },
-			{ wuert: 'Kären', jumppoint: 'E-ÄR' },
+			// { wuert: 'Kären', jumppoint: 'E-ÄR' },
 			{ wuert: 'Katalog', jumppoint: 'G-G4' },
 			{ wuert: 'Kaz', jumppoint: 'Z' },
 			{ wuert: 'Keesen', jumppoint: 'S' },
@@ -397,7 +397,7 @@ var context = {
 			{ wuert: 'Këscht', jumppoint: 'S-SCH' },
 			{ wuert: 'Ketten', jumppoint: 'T-TT' },
 			{ wuert: 'Kichelchen', jumppoint: 'C-CH' },
-			{ wuert: 'Kierch', jumppoint: 'E-UER' },
+			{ wuert: 'Kierch', jumppoint: 'E-IER' },
 			{ wuert: 'Kiischt', jumppoint: 'I-II' },
 			{ wuert: 'Kinnek', jumppoint: 'K' },
 			{ wuert: 'klammen', jumppoint: 'M-MM' },
@@ -405,7 +405,7 @@ var context = {
 			{ wuert: 'klappen', jumppoint: 'P-PP' },
 			{ wuert: 'Klass', jumppoint: 'K' },
 			{ wuert: 'klauen', jumppoint: 'A-AU' },
-			{ wuert: 'klibberen', jumppoint: 'B-BB' },
+			// { wuert: 'klibberen', jumppoint: 'B-BB' },
 			{ wuert: 'Klub', jumppoint: 'B-BB' },
 			{ wuert: 'Kludder', jumppoint: 'D-DD2' },
 			{ wuert: 'klug', jumppoint: 'G-G4' },
@@ -460,7 +460,7 @@ var context = {
 			{ wuert: 'Pflicht', jumppoint: 'P-PF' },
 			{ wuert: 'Pijen', jumppoint: 'J' },
 			{ wuert: 'platt', jumppoint: 'T-TT' },
-			{ wuert: 'Prabbeli', jumppoint: 'B-BB' },
+			{ wuert: 'Prabbeli', jumppoint: 'B-BB2' },
 			{ wuert: 'prägen', jumppoint: 'A-Ä' },
 			{ wuert: 'Poul', jumppoint: 'P' },
 			{ wuert: 'Psychologie', jumppoint: 'Y' }
@@ -483,7 +483,7 @@ var context = {
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'S', wierder: [
 			{ wuert: 'Saachen', jumppoint: 'S' },
-			{ wuert: 'Saier', jumppoint: 'E-AI' },
+			{ wuert: 'Saier', jumppoint: 'A-AI' },
 			{ wuert: 'Samba', jumppoint: 'S' },
 			{ wuert: 'schéin', jumppoint: 'S-SCH' },
 			{ wuert: 'Schiet', jumppoint: 'E-IE' },
@@ -493,7 +493,7 @@ var context = {
 			{ wuert: 'schmock', jumppoint: 'C-CK' },
 			{ wuert: 'Schnéi', jumppoint: 'E-ÉI' },
 			{ wuert: 'Schued', jumppoint: 'D-D' },
-			{ wuert: 'Seeërei', jumppoint: 'E-Ë' },
+			{ wuert: 'Seeërei', jumppoint: 'E-Ë2' },
 			{ wuert: 'séier', jumppoint: 'E-ÉI' },
 			{ wuert: 'Silvester', jumppoint: 'S' },
 			{ wuert: 'soueren', jumppoint: 'O-OU' },
@@ -501,11 +501,11 @@ var context = {
 			{ wuert: 'Speck', jumppoint: 'S-SP2' },
 			{ wuert: 'Spigel', jumppoint: 'G-G' },
 			{ wuert: 'Spill', jumppoint: 'I' },
-			{ wuert: 'Spur (eng)', jumppoint: 'E-IR' },
+			// { wuert: 'Spur (eng)', jumppoint: 'E-IR' },
 			{ wuert: 'staark', jumppoint: 'S-ST2' },
-			{ wuert: 'Stäerkt', jumppoint: 'E-UER' },
+			{ wuert: 'Stäerkt', jumppoint: 'E-ÄER' },
 			{ wuert: 'stäipen', jumppoint: 'A-ÄI' },
-			{ wuert: 'Stär', jumppoint: 'E-ÄR' },
+			{ wuert: 'Stär', jumppoint: 'R-R' },
 			{ wuert: 'Stéck', jumppoint: 'E-É' },
 			{ wuert: 'Stiwwel', jumppoint: 'S-ST2' },
 			{ wuert: 'Streech', jumppoint: 'E-EE' },
@@ -523,7 +523,7 @@ var context = {
 			{ wuert: 'Tut', jumppoint: 'U' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'U', wierder: [
-			{ wuert: 'Uecht', jumppoint: 'E-IE' }
+			{ wuert: 'Uecht', jumppoint: 'E-UE' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'V', wierder: [
 			{ wuert: 'vag', jumppoint: 'G-G2' },
