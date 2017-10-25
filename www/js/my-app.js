@@ -23,6 +23,7 @@ var Player = {
 								function(error) {
 									//alert('error');
 									console.log('upsi');
+									$$('#audioplayer').addClass('no-player');
 								}
 							);
 	},
@@ -645,15 +646,23 @@ var tour = localStorage.getItem("tour");
 var welcomeText = [{
 		id: 'slide0',
 		picture: '<div class="tutorialicon">♥</div>',
-		text: 'First slide'
+		text: 'Buschtaf auswielen fir Beispillwierder ugewissen ze kréien.'
 	}, {
 		id: 'slide1',
 		picture: '<div class="tutorialicon">♥</div>',
-		text: 'Second slide'
+		text: 'Korrekt Aussproch ulauschteren.'
 	}, {
 		id: 'slide2',
 		picture: '<div class="tutorialicon">♥</div>',
-		text: 'Third slide'
+		text: 'Déi ugewandte Regel liesen.'
+	}, {
+		id: 'slide3',
+		picture: '<div class="tutorialicon">♥</div>',
+		text: 'Wierderlëscht uweisen an Regelen zu de Wierder nosichen.'
+	}, {
+		id: 'slide4',
+		picture: '<div class="tutorialicon">♥</div>',
+		text: 'Lëtzebuergësch Ortographie an Aussproch besser verstoën an uwenden.'
 	}];
 if (!tour || tour == "0") {
 	myApp.welcomescreen(welcomeText, {
