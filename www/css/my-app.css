@@ -19,6 +19,10 @@ html {
 	scroll-behavior: smooth;
 	font-variant-ligatures: none;
 }
+.hide-title {
+	margin-top: 0%;
+    height: 0px;
+}
 .welcomescreen-picture {
 	margin-top: 0 !important;
 }
@@ -26,9 +30,10 @@ html {
 {
 	width:80%;
 	margin: 0 auto;
-	height: 100vh;
+	height: 75vh;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 .tutorialicon1 {
 	background-image: url('../img/tutorialicon1.png');
