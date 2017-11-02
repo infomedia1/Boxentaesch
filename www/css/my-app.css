@@ -19,8 +19,32 @@ html {
 	scroll-behavior: smooth;
 	font-variant-ligatures: none;
 }
-
-
+.welcomescreen-picture {
+	margin-top: 0 !important;
+}
+.tutorialicon
+{
+	width:80%;
+	margin: 0 auto;
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.tutorialicon1 {
+	background-image: url('../img/tutorialicon1.png');
+}
+.tutorialicon2 {
+	background-image: url('../img/tutorialicon2.png');
+}
+.tutorialicon3 {
+	background-image: url('../img/tutorialicon3.png');
+}
+.tutorialicon4 {
+	background-image: url('../img/tutorialicon4.png');
+}
+.tutorialicon5 {
+	background-image: url('../img/tutorialicon5.png');
+}
 
 .bold {
 	/* font-family: "Raleway-Bold"; */
