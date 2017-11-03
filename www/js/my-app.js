@@ -34,7 +34,7 @@ var Player = {
 		} else {
 			var mediasrc='audio/';
 		}
-		$$('.player-play-icon').html('&#9205;');
+		$$('.player-play-icon').css('background-image','url(\'css/res/play50.png\')');
 		$$('.bar').css('animation-play-state','running');
 		path=mediasrc + path;
 		
@@ -59,14 +59,14 @@ var Player = {
 	pauseResume: function() {
 		if (Player.isPlaying === true)
 		{
+$$('.player-play-icon').css('background-image','url(\'css/res/pause50.png\')');
 			Player.media.pause();
-			$$('.player-play-icon').html('&#9208;');
 			// $$('.bar').css('display','none');
 			//$$('.bar').css('display','none');
 			$$('.bar').css('animation-play-state','paused');
 		} else {
+			$$('.player-play-icon').css('background-image','url(\'css/res/play50.png\')');
 			Player.media.play();
-			
 			// $$('.bar').css('display','block');
 			$$('.bar').css('animation-play-state','running');
 		}

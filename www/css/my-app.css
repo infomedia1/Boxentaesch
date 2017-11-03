@@ -162,7 +162,11 @@ h1, h2, h3, h4, h5, h6 {
 .remark:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2755";
+	content: "\00a0\00a0\00a0\00a0";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('res/exclamation.png');
 	font-weight: 300;
 	font-size: 1.2em;
 }
@@ -170,14 +174,18 @@ h1, h2, h3, h4, h5, h6 {
 .check:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2754";
+	content: "\00a0\00a0\00a0\00a0";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('res/question.png');
 	font-weight: 300;
 	font-size: 1.2em;
 }
 .cross:before {
 	margin-left:-1.5em;
 	margin-right: 0.5em;
-	content:"\2718";
+	content: "\00a0\00a0\00a0\00a0";
 	font-weight: 300;
 	font-size: 1.2em;
 }
@@ -254,6 +262,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left:15px;
 	width:50px;
 	float:left;
+	background-image: url('res/play50.png');
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	/* background-position: center; */
 	/* content:"\23F8"; Pause Icon */
 }
 
