@@ -1,0 +1,42 @@
+{
+  "_from": "cordova-ios-plugin-no-export-compliance",
+  "_id": "cordova-ios-plugin-no-export-compliance@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-oHa+SmsMJ4xo4uOgXoQHa7hE0C+I/MSYNxNQYXktVTx8czMpXqV5OnZbTUE/kA4qM/l7XDdxRPeVL8SxIPmA7A==",
+  "_location": "/cordova-ios-plugin-no-export-compliance",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-ios-plugin-no-export-compliance",
+    "name": "cordova-ios-plugin-no-export-compliance",
+    "escapedName": "cordova-ios-plugin-no-export-compliance",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-ios-plugin-no-export-compliance/-/cordova-ios-plugin-no-export-compliance-0.0.5.tgz",
+  "_shasum": "1768b5d5df931bf372e91d39bb9e1390e19da2ac",
+  "_shrinkwrap": null,
+  "_spec": "cordova-ios-plugin-no-export-compliance",
+  "_where": "K:\\App\\Boxentaesch\\Letzebuergesch fir an d'Boxentaesch\\node_modules",
+  "bin": null,
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "name": "cordova-ios-plugin-no-export-compliance",
+  "optionalDependencies": {},
+  "peerDependencies": {},
+  "version": "0.0.5"
+}
