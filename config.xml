@@ -45,6 +45,7 @@
     </platform>
     <platform name="ios">
         <resource-file src="GoogleService-Info.plist" />
+		<gap:config-file platform="ios" parent="ITSAppUsesNonExemptEncryption" mode="add"><false/></gap:config-file>
         <icon height="57" platform="ios" src="ressourceimages/icons/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="ressourceimages/icons/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="ressourceimages/icons/ios/icon-40.png" width="40" />
@@ -74,7 +75,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-	<gap:config-file platform="ios" parent="ITSAppUsesNonExemptEncryption" mode="add"><false/></gap:config-file>
+	
     <preference name="BackupWebStorage" source="npm" value="none" />
     <preference name="DisallowOverscroll" source="npm" value="true" />
     <preference name="AutoHideSplashScreen" value="true" />
