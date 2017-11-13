@@ -26,7 +26,7 @@ $$(document).on('click', '.player-play-icon', function (e) {
 
 function openStore() {
 	console.log('openstore...');
-	gotoAppStore("id1200014540","com.uprui.launcher.marshmallow");
+	gotoAppStore("id1200014540","com.konterbont.magazine");
 }
 function initSubselector(hash)
 {
