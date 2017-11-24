@@ -1,27 +1,30 @@
 {
-    "name": "com.konterbont.boxentaesch",
-    "version": "0.8.2",
-    "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
-    "cordova": {
-        "platforms": [],
-        "plugins": {
-            "cordova-plugin-console": {},
-            "cordova-plugin-media": {},
-            "cordova-plugin-splashscreen": {},
-            "cordova-plugin-statusbar": {},
-            "cordova-plugin-whitelist": {},
-            "cordova-plugin-market": {},
-            "cordova-ios-plugin-no-export-compliance": {}
-        }
-    },
-    "dependencies": {
-        "cordova-ios-plugin-no-export-compliance": "0.0.5",
-        "cordova-plugin-console": "~1.0.7",
-        "cordova-plugin-ios-no-export-compliance": "0.0.1-security",
-        "cordova-plugin-market": "^1.2.0",
-        "cordova-plugin-media": "~3.0.1",
-        "cordova-plugin-splashscreen": "~4.0.3",
-        "cordova-plugin-statusbar": "~1.0.1",
-        "cordova-plugin-whitelist": "~1.2.2"
+  "name": "com.konterbont.boxentaesch",
+  "version": "0.8.2",
+  "displayName": "Lëtzebuergesch fir an d'Boxentäsch",
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-console": {},
+      "cordova-plugin-media": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-market": {},
+      "cordova-ios-plugin-no-export-compliance": {}
     }
+  },
+  "dependencies": {
+    "cordova-browser": "^5.0.1",
+    "cordova-ios-plugin-no-export-compliance": "0.0.5",
+    "cordova-plugin-console": "~1.0.7",
+    "cordova-plugin-ios-no-export-compliance": "0.0.1-security",
+    "cordova-plugin-market": "^1.2.0",
+    "cordova-plugin-media": "~3.0.1",
+    "cordova-plugin-splashscreen": "~4.0.3",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-whitelist": "~1.2.2"
+  }
 }

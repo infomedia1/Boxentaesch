@@ -45,60 +45,80 @@ function initSubselector(hash)
 	{
 	case 'A': 
 	// console.log('E');
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'A-AA\');"><span>aa</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'A-A\');"><span>a</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'A-A2\');"><span>a</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'A-AA\');"><span>aa</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'A-AI\');"><span>ai</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'A-AU\');"><span>au</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'A-AU2\');"><span>au</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'A-Ä\');"><span>ä</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'A-Ä2\');"><span>ä</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'A-ÄÄ\');"><span>ää</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'A-ÄI\');"><span>äi</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'A-AA': jumppoint=0; break;
-			case 'A-AI': jumppoint=1; break;
-			case 'A-AU': jumppoint=2; break;
-			case 'A-Ä': jumppoint=3; break;
-			case 'A-ÄÄ': jumppoint=4; break;
-			case 'A-ÄI': jumppoint=5; break;
+			case 'A-A': jumppoint=0; break;
+			case 'A-A2': jumppoint=1; break;
+			case 'A-AA': jumppoint=2; break;
+			case 'A-AI': jumppoint=3; break;
+			case 'A-AU': jumppoint=4; break;
+			case 'A-AU2': jumppoint=5; break;
+			case 'A-Ä': jumppoint=6; break;
+			case 'A-Ä2': jumppoint=7; break;
+			case 'A-ÄÄ': jumppoint=8; break;
+			case 'A-ÄI': jumppoint=9; break;
 		}
 		break;
 		case 'B': 
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'B-B\');"><span>&#8722;b</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'B-B2\');"><span>&#8722;b</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'B-BB\');"><span>&#8722;bb</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'B-BB2\');"><span>&#8722;bb&#8722;</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'B-B': jumppoint=0; break;
-			case 'B-BB': jumppoint=1; break;
-			case 'B-BB2': jumppoint=2; break;
+			case 'B-B2': jumppoint=1; break;
+			case 'B-BB': jumppoint=2; break;
+			case 'B-BB2': jumppoint=3; break;
 		}
 		break;
 		case 'C': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'C-CH\');"><span>&#8722;ch</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'C-CK\');"><span>&#8722;ck</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'C-C\');"><span>c</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'C-C2\');"><span>c</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'C-CH\');"><span>&#8722;ch(&#8722;)</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'C-CH2\');"><span>&#8722;ch(&#8722;)</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'C-CK\');"><span>&#8722;ck(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'C-CH': jumppoint=0; break;
-			case 'C-CK': jumppoint=1; break;
+			case 'C-C': jumppoint=0; break;
+			case 'C-C2': jumppoint=1; break;
+			case 'C-CH': jumppoint=2; break;
+			case 'C-CH2': jumppoint=3; break;
+			case 'C-CK': jumppoint=4; break;
 		}
 		break;
 		case 'D': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'D-D\');"><span>&#8722;d</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'D-D\');"><span>(&#8722;)d&#8722;</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'D-D2\');"><span>&#8722;d</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'D-DD\');"><span>&#8722;dd</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'D-DD2\');"><span>&#8722;dd&#8722;</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'D-D': jumppoint=0; break;
-			case 'D-DD': jumppoint=1; break;
-			case 'D-DD2': jumppoint=2; break;
+			case 'D-D2': jumppoint=1; break;
+			case 'D-DD': jumppoint=2; break;
+			case 'D-DD2': jumppoint=3; break;
 		}
 		break;
 	case 'E': 
 	// console.log('E');
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'E-EE\');"><span>ee</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'E-E\');"><span>e</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'E-E2\');"><span>e</span></div>',
+			newslides=	'<div class="swiper-slide" onclick="getContent(\'E-EE\');"><span>ee</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'E-Ë\');"><span>ë</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'E-Ë2\');"><span>(e)ë(e)</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'E-É\');"><span>é</span></div>',
@@ -115,143 +135,191 @@ function initSubselector(hash)
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'E-EE': jumppoint=0; break;
-			case 'E-Ë': jumppoint=1; break;
-			case 'E-Ë2': jumppoint=2; break;
-			case 'E-É': jumppoint=3; break;
-			case 'E-É2': jumppoint=4; break;
-			case 'E-È': jumppoint=5; break;
-			case 'E-IE': jumppoint=6; break;
-			case 'E-UE': jumppoint=7; break;
-			case 'E-IER': jumppoint=8; break;
-			case 'E-UER': jumppoint=9; break;
-			case 'E-ÄER': jumppoint=10; break;
-			case 'E-ÉI': jumppoint=11; break;
-			case 'E-EI': jumppoint=12; break;
-			case 'E-EU': jumppoint=13; break;
+			case 'E-E': jumppoint=0; break;
+			case 'E-E2': jumppoint=1; break;
+			case 'E-EE': jumppoint=2; break;
+			case 'E-Ë': jumppoint=3; break;
+			case 'E-Ë2': jumppoint=4; break;
+			case 'E-É': jumppoint=5; break;
+			case 'E-É2': jumppoint=6; break;
+			case 'E-È': jumppoint=7; break;
+			case 'E-IE': jumppoint=8; break;
+			case 'E-UE': jumppoint=9; break;
+			case 'E-IER': jumppoint=10; break;
+			case 'E-UER': jumppoint=11; break;
+			case 'E-ÄER': jumppoint=11; break;
+			case 'E-ÉI': jumppoint=12; break;
+			case 'E-EI': jumppoint=13; break;
+			case 'E-EU': jumppoint=14; break;
 			
 		}
 		break;
 	case 'F': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'F-FF\');"><span>ff</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'F-F\');"><span>f</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'F-FF\');"><span>ff</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'F-FF': jumppoint=0; break;
+			case 'F-F': jumppoint=0; break;
+			case 'F-FF': jumppoint=1; break;
 		}
 		break;
 	case 'G': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'G-G\');"><span>&#8722;g&#8722;</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'G-G2\');"><span>&#8722;g</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'G-G\');"><span>(&#8722;)g&#8722;</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'G-G2\');"><span>&#8722;g&#8722;</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'G-G3\');"><span>&#8722;g</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'G-G4\');"><span>&#8722;g</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'G-GG\');"><span>&#8722;gg</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'G-NG\');"><span>&#8722;ng</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'G-NK\');"><span>&#8722;nk</span></div>'];
+						'<div class="swiper-slide" onclick="getContent(\'G-G5\');"><span>&#8722;g</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'G-GG\');"><span>&#8722;gg&#8722;</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'G-NG\');"><span>&#8722;ng(&#8722;)</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'G-NK\');"><span>&#8722;nk(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'G-G': jumppoint=0; break;
-			case 'G-G2': jumppoint=1; break;
-			case 'G-G3': jumppoint=2; break;
-			case 'G-G4': jumppoint=3; break;
+			case 'G-G2': jumppoint=0; break;
+			case 'G-G3': jumppoint=1; break;
+			case 'G-G4': jumppoint=2; break;
+			case 'G-G5': jumppoint=3; break;
 			case 'G-GG': jumppoint=4; break;
 			case 'G-NG': jumppoint=5; break;
 			case 'G-NK': jumppoint=6; break;
 		}
 		break;
+		
+		case 'H': 
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'H-H\');"><span>h</span></div>'];
+						setoldhash=hash[0];
+		switch(hash)
+		{
+			case 'H-H': jumppoint=0; break;
+		}
+		break;
+		
 		case 'I': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'I-IE\');"><span>ie</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'I-I\');"><span>i</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'I-I2\');"><span>i</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'I-IE\');"><span>ie</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'I-II\');"><span>ii</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'I-IE': jumppoint=0; break;
-			case 'I-II': jumppoint=1; break;
+			case 'I-I': jumppoint=0; break;
+			case 'I-I2': jumppoint=1; break;
+			case 'I-IE': jumppoint=2; break;
+			case 'I-II': jumppoint=3; break;
 		}
 		break;
 		case 'J': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'J-J\');"><span>j</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'J-J\');"><span>(&#8722;)j</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'J-J2\');"><span>j</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'J-J': jumppoint=0; break;
+			case 'J-J2': jumppoint=1; break;
 		}
 		break;
 		case 'K': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'K-CK\');"><span>&#8722;ck(-)</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'K-K\');"><span>(&#8722;)k(&#8722;)</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'K-CK\');"><span>&#8722;ck(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'K-CK': jumppoint=0; break;
+			case 'K-K': jumppoint=0; break;
+			case 'K-CK': jumppoint=1; break;
 		}
 		break;
 		case 'L': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'L-LL\');"><span>&#8722;ll(-)</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'L-L\');"><span>l</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'L-LL\');"><span>&#8722;ll(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'L-LL': jumppoint=0; break;
+			case 'L-L': jumppoint=0; break;
+			case 'L-LL': jumppoint=1; break;
 		}
 		break;
 		case 'M': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'M-MM\');"><span>&#8722;mm(-)</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'M-M\');"><span>m</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'M-MM\');"><span>&#8722;mm(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'M-MM': jumppoint=0; break;
+			case 'M-M': jumppoint=0; break;
+			case 'M-MM': jumppoint=1; break;
 		}
 		break;
 		case 'N': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'N-NN\');"><span>nn</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N\');"><span>(n)*&#8722;</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N2\');"><span>(n)*</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'N-N\');"><span>n</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'N-NN\');"><span>nn</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'N-N2\');"><span>(n)* fällt ewech</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'N-N3\');"><span>(n) * bleift stoen</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'N-NN': jumppoint=0; break;
-			case 'N-N': jumppoint=1; break;
+			case 'N-N': jumppoint=0; break;
+			case 'N-NN': jumppoint=1; break;
 			case 'N-N2': jumppoint=2; break;
+			case 'N-N3': jumppoint=3; break;
 		}
 		break;
 		case 'O': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'O-OO\');"><span>oo</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'O-O\');"><span>o</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'O-O2\');"><span>o</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'O-OO\');"><span>oo</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'O-OU\');"><span>ou</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'O-Ö\');"><span>ö</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'O-ÖÖ\');"><span>öö</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'O-OO': jumppoint=0; break;
-			case 'O-OU': jumppoint=1; break;
-			case 'O-Ö': jumppoint=2; break;
-			case 'O-ÖÖ': jumppoint=3; break;
+			case 'O-O': jumppoint=0; break;
+			case 'O-O2': jumppoint=1; break;
+			case 'O-OO': jumppoint=2; break;
+			case 'O-OU': jumppoint=3; break;
+			case 'O-Ö': jumppoint=4; break;
+			case 'O-ÖÖ': jumppoint=5; break;
 		}
 		break;
 		case 'P': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'P-PP\');"><span>pp</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'P-PF\');"><span>pf</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'P-P\');"><span>(&#8722;)p(&#8722;)</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'P-PP\');"><span>pp</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'P-PF\');"><span>(&#8722;)pf&#8722;</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'P-PP': jumppoint=0; break;
-			case 'P-PF': jumppoint=1; break;
+			case 'P-P': jumppoint=0; break;
+			case 'P-PP': jumppoint=1; break;
+			case 'P-PF': jumppoint=2; break;
+		}
+		break;
+		case 'Q': 
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'Q-Q\');"><span>qu&#8722;</span></div>'];
+						setoldhash=hash[0];
+		switch(hash)
+		{
+			case 'Q-Q': jumppoint=0; break;
 		}
 		break;
 		case 'R': 
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'R-R\');"><span>r</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'R-R2\');"><span>&#8722;r</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'R-R3\');"><span>&#8722;r&#8722;</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'R-RR\');"><span>&#8722;rr&#8722;</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'R-R': jumppoint=0; break;
 			case 'R-R2': jumppoint=1; break;
-			case 'R-RR': jumppoint=2; break;
+			case 'R-R3': jumppoint=2; break;
+			case 'R-RR': jumppoint=3; break;
 		}
 		break;
 		case 'S': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'S-S\');"><span>&#8722;s</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'S-S\');"><span>s</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'S-S2\');"><span>s</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'S-S3\');"><span>&#8722;s</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'S-ST\');"><span>&#8722;st(&#8722;)</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'S-ST2\');"><span>st&#8722;</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'S-SP\');"><span>&#8722;sp(&#8722;)</span></div>',
@@ -262,66 +330,100 @@ function initSubselector(hash)
 		switch(hash)
 		{
 			case 'S-S': jumppoint=0; break;
-			case 'S-ST': jumppoint=1; break;
-			case 'S-ST2': jumppoint=2; break;
-			case 'S-SP': jumppoint=3; break;
-			case 'S-SP2': jumppoint=4; break;
-			case 'S-SCH': jumppoint=5; break;
-			case 'S-SS': jumppoint=6; break;
+			case 'S-S2': jumppoint=1; break;
+			case 'S-S3': jumppoint=2; break;
+			case 'S-ST': jumppoint=3; break;
+			case 'S-ST2': jumppoint=4; break;
+			case 'S-SP': jumppoint=5; break;
+			case 'S-SP2': jumppoint=6; break;
+			case 'S-SCH': jumppoint=7; break;
+			case 'S-SS': jumppoint=8; break;
 		}
 		break;
 		case 'T': 
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'T-TZ\');"><span>&#8722;tz(&#8722;)</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'T-T\');"><span>t</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'T-TT\');"><span>tt</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'T-TZ': jumppoint=0; break;
-			case 'T-TT': jumppoint=1; break;
+			case 'T-T': jumppoint=1; break;
+			case 'T-TT': jumppoint=2; break;
 		}
 		break;
 		case 'U': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'U-UU\');"><span>uu</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'U-U\');"><span>u</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'U-U2\');"><span>u</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'U-UU\');"><span>uu</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'U-UE\');"><span>ue</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'U-OU\');"><span>ou</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'U-Ü\');"><span>ü</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'U-Ü2\');"><span>ü</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'U-ÜÜ\');"><span>üü</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'U-UU': jumppoint=0; break;
-			case 'U-UE': jumppoint=1; break;
-			case 'U-OU': jumppoint=2; break;
-			case 'U-Ü': jumppoint=3; break;
-			case 'U-ÜÜ': jumppoint=4; break;
+			case 'U-U': jumppoint=0; break;
+			case 'U-U2': jumppoint=1; break;
+			case 'U-UU': jumppoint=2; break;
+			case 'U-UE': jumppoint=3; break;
+			case 'U-OU': jumppoint=4; break;
+			case 'U-Ü': jumppoint=5; break;
+			case 'U-Ü2': jumppoint=5; break;
+			case 'U-ÜÜ': jumppoint=6; break;
 		}
 		break;
 		case 'V': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'V-V\');"><span>&#8722;v</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'V-V\');"><span>v</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'V-V2\');"><span>v</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'V-V3\');"><span>&#8722;v</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
 			case 'V-V': jumppoint=0; break;
+			case 'V-V2': jumppoint=1; break;
+			case 'V-V3': jumppoint=2; break;
 		}
 		break;
 		case 'W': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'W-WW\');"><span>&#8722;ww&#8722;</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'W-W\');"><span>w</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'W-WW\');"><span>&#8722;ww&#8722;</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'W-WW': jumppoint=0; break;
+			case 'W-W': jumppoint=0; break;
+			case 'W-WW': jumppoint=1; break;
+		}
+		break;
+		case 'X': 
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'X-X\');"><span>x</span></div>'];
+						setoldhash=hash[0];
+		switch(hash)
+		{
+			case 'X-X': jumppoint=0; break;
+		}
+		break;
+		case 'Y': 
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'Y-Y\');"><span>y</span></div>'];
+						setoldhash=hash[0];
+		switch(hash)
+		{
+			case 'Y-Y': jumppoint=0; break;
 		}
 		break;
 		case 'Z': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'Z-TZ\');"><span>-tz</span></div>'];
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'Z-TZ\');"><span>z</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'Z-TZ\');"><span>&#8722;tz(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 		switch(hash)
 		{
-			case 'Z-TZ': jumppoint=0; break;
+			case 'Z-Z': jumppoint=0; break;
+			case 'Z-TZ': jumppoint=1; break;
 		}
 		break;
 	}
-	// console.log('2 oldhash: '+oldhash+' hash: '+hash);
+	//console.log('2 oldhash: '+oldhash+' hash: '+hash);
 	if((oldhash!==hash[0]) || (oldhash==hash))
 	{
 		mySwiperSub.appendSlide(newslides);
@@ -332,7 +434,8 @@ function initSubselector(hash)
 	mySwiperSub.slideTo(jumppoint,650);
 	oldhash=setoldhash;
 }
-function getContent(contentid)
+
+function getContent(contentid,direct)
 {
 	//
 	//$$('.tab-link').css('height','75px');
@@ -350,13 +453,27 @@ function getContent(contentid)
 		subselector=true;
 	} else { $$('#swiper-sub').addClass('hidesub'); }
 	$$('#thesubnavbar').removeClass('hide-tabbar');
+	subselector=false;
 	switch (contentid)
 	{
 		case 'A' : thecontentbox="<h1>Buschtaf A</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>B<span class=\"bold\">a</span>m<br>erk<span class=\"bold\">a</span>len<br><span class=\"bold\">A</span>f</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a');\">&nbsp;</p></div></div><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Pr<span class=\"bold\">a</span>bbeli<br>r<span class=\"bold\">a</span>schten<br><span class=\"bold\">A</span>ffekot</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
 			thecontentrule='<h1>Regel zu a</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">a</span> viru engem Konsonant, gëtt e laang geschwat.</p>';
-			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">a</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat</p>';
+			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">a</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
+			if(direct) { subselector=false; }
+			result=jumpsel(jumppoint, hash, subselector, contentid);
+			break;
+			case 'A-A' :
+			thecontentbox="<h1>Buschtaf a</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>B<span class=\"bold\">a</span>m<br>erk<span class=\"bold\">a</span>len<br><span class=\"bold\">A</span>f</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a-a');\">&nbsp;</p></div></div>";
+			thecontentrule='<h1>Regel zu a</h1>';
+			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">a</span> viru engem Konsonant, gëtt e laang geschwat.</p>';
+			result=jumpsel(jumppoint, hash, subselector, contentid);
+			break;
+			case 'A-A2':
+			thecontentbox="<h1>Buschtaf a</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Pr<span class=\"bold\">a</span>bbeli<br>r<span class=\"bold\">a</span>schten<br><span class=\"bold\">A</span>ffekot</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a2');\">&nbsp;</p></div></div>";
+			thecontentrule='<h1>Regel zu a</h1>';
+			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">a</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'A-AA' : thecontentbox="<h1>Buschtaf aa</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>g<span class=\"bold\">aa</span>psen<br>schm<span class=\"bold\">aa</span>chen<br><span class=\"bold\">aa</span>chtmol</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a-aa');\">&nbsp;</p></div></div>";
@@ -379,7 +496,7 @@ function getContent(contentid)
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			thecontentrule='<h1>Regel zu ä</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">ä</span> viru engem Konsonant, gëtt e laang geschwat.</p>';
-			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">ä</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat</p>';
+			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">ä</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
 			break;
 			case 'A-ÄÄ' : thecontentbox="<h1>Buschtaf ää</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>gepr<span class=\"bold\">ää</span>gt</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('a-atremaatrema');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu ää</h1>';
@@ -394,11 +511,17 @@ function getContent(contentid)
 			break;
 		case 'B' : thecontentbox="<h1><span class=\"bold\">b</span> vir oder an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu b</h1>';
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">b</span> mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'B-B' : thecontentbox="<h1><span class=\"bold\">b</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">b</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b');\">&nbsp;</p></div></div>";
+			case 'B-B' : thecontentbox="<h1><span class=\"bold\">b</span> vir oder an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b');\">&nbsp;</p></div></div>";
+			thecontentrule='<h1>Regel zu b</h1>';
+			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">b</span> mëll ausgeschwat.</p>';
+			result=jumpsel(jumppoint, hash, subselector, contentid);
+			break;
+			case 'B-B2' : thecontentbox="<h1><span class=\"bold\">b</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">b</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu -b</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">b</span> um Enn vun engem Wuert, gëtt en haart (d.h. wéi en <span class=\"bold\">p</span>) ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert gëtt de Buschtaf nees mëll ausgeschwat: Wab &#10141; Waben.</p>';
@@ -417,11 +540,24 @@ function getContent(contentid)
 			break;
 		case 'C' : thecontentbox="<h1>Den <span class=\"bold\">C</span> um Ufank vum Wuert</h1><h2>Ausgeschwaat wei e K</h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>abinet<br><span class=\"bold\">C</span>abaret<br><span class=\"bold\">c</span>ool</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c');\">&nbsp;</p></div></div><h2>Ausgeschwaat wei en S</h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>ité<br><span class=\"bold\">C</span>ent</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu c</h1>';
 			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">k</span> ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Kënnt nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span>, gëtt den <span class=\"bold\">c</span> wéi en <span class=\"bold\">s</span> geschwat.</p>';
 			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">s</span> ausgeschwat.</p>'; // C-C
-			thecontentrule+='<h2>Remark</h2><p class="remark">Dëst gëllt just, wann nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span> kënnt</p>';
+			thecontentrule+='<h2>Remark</h2><p class="remark">Dëst gëllt just, wann nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span> kënnt.</p>';
+			result=jumpsel(jumppoint, hash, subselector, contentid);
+			break;
+			case 'C-C':thecontentbox="<h1>Den <span class=\"bold\">c</span> um Ufank vum Wuert</h1><h2>Ausgeschwaat wei e <span class=\"bold\">k</span></h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>abinet<br><span class=\"bold\">C</span>abaret<br><span class=\"bold\">c</span>ool</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c');\">&nbsp;</p></div></div>";
+			thecontentrule='<h1>Regel zu <span class=\"bold\">c</span></h1>';
+			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">k</span> ausgeschwat.</p>';
+			thecontentrule+='<h2>Remark</h2><p class="remark">Kënnt nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span>, gëtt den <span class=\"bold\">c</span> wéi en <span class=\"bold\">s</span> geschwat.</p>';
+			result=jumpsel(jumppoint, hash, subselector, contentid);
+			break;
+			case 'C-C2':thecontentbox="<h1>Den <span class=\"bold\">c</span> um Ufank vum Wuert</h1><h2>Ausgeschwaat wei en <span class=\"bold\">s</span></h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>ité<br><span class=\"bold\">C</span>ent</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c2');\">&nbsp;</p></div></div>";
+			thecontentrule='<h1>Regel zu <span class=\"bold\">c</span></h1>';
+			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">s</span> ausgeschwat.</p>'; // C-C
+			thecontentrule+='<h2>Remark</h2><p class="remark">Dëst gëllt just, wann nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span> kënnt.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'C-CH' : thecontentbox="<h1>Den <span class=\"bold\">ch</span> an der Mëtt oder um Enn vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Bu<span class=\"bold\">ch</span><br>La<span class=\"bold\">ch<br></span>laa<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch');\">&nbsp;</p></div></div><h1></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Ki<span class=\"bold\">ch</span>el<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch2');\">&nbsp;</p></div></div>";
@@ -436,8 +572,9 @@ function getContent(contentid)
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">ck</span> gëtt ëmmer wéi en <span class=\"bold\">k</span> ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		case 'D' : thecontentbox="<h1>Den <span class=\"bold\">d</span> Vir an an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">d</span>af<br><span class=\"bold\">D</span>rot<br>bero<span class=\"bold\">d</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d');\">&nbsp;</p></div></div>";
+		case 'D' : thecontentbox="<h1>Den <span class=\"bold\">d</span> vir an an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">d</span>af<br><span class=\"bold\">D</span>rot<br>bero<span class=\"bold\">d</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu (-)d-</h1>';
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">d</span> mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -464,6 +601,7 @@ function getContent(contentid)
 			thecontentrule+='<h1>laangen e</h1><p class="rule check">Den <span class=\"bold\">e</span> gëtt laang geschwat, awer just <span class=\"bold\">e</span> geschriwwen.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Op <a href=\"http://ortho.lod.lu\" class=\"lodlink\" onclick=\"javascript:openpage(\'ortho.lod.lu\')\">ortho.lod.lu</a> fannt Dir méi Informatiounen iwwert d‘Schreifweis vum <span class=\"bold\">e</span> an iwwert d‘Friemwierder.</p>';
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'E-EE' : thecontentbox="<h1>Buschtaf ee</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Str<span class=\"bold\">ee</span>ch<br>n<span class=\"bold\">ee</span><br>R<span class=\"bold\">ee</span>n<br>Billj<span class=\"bold\">ee</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-ee');\">&nbsp;</p></div></div>";
@@ -549,6 +687,7 @@ function getContent(contentid)
 				break;
 		case 'F' : thecontentbox="<h1>Buschtaf F</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">f</span>äerten<br>schlo<span class=\"bold\">f</span>en<br>A<span class=\"bold\">f</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('f');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu f</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">f</span> gëtt ëmmer d’selwecht ausgeschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -561,6 +700,7 @@ function getContent(contentid)
 				break;
 		case 'G' : thecontentbox="<h1>Buschtaf G</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">G</span>ittar<br>Fri<span class=\"bold\">g</span>o</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu (-)g-</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">g</span> gëtt am Ufank an an der Mëtt vum Wuert mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -606,12 +746,14 @@ function getContent(contentid)
 				break;
 		case 'H' : thecontentbox="<h1>Buschtaf H</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">H</span>oer<br>be<span class=\"bold\">h</span>uelen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('h');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu h</h1>';
+			if(direct) { subselector=false; }
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">h</span> als Hauchlaut geschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Den <span class=\"bold\">h</span> gëtt am Lëtzebuergeschen net benotzt, fir e Vokal méi laang ze maachen: Drot.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 		case 'I' : thecontentbox="<h1>Buschtaf i virun engem Konsonant</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Z<span class=\"bold\">i</span>l<br>n<span class=\"bold\">i</span>mols</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i');\">&nbsp;</p></div></div><h1>Buschtaf i virun zwee oder méi Konsonanten</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>d<span class=\"bold\">i</span>cht<br><span class=\"bold\">I</span>nsel<br>Sp<span class=\"bold\">i</span>ll</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu i</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">i</span> viru just engem Konsonant, gëtt e laang geschwat.</p>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">i</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
@@ -631,6 +773,7 @@ function getContent(contentid)
 			break;
 		case 'J' : thecontentbox="<h1>Buschtaf J</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">J</span>ackett<br>Pi<span class=\"bold\">j</span>en<br><span class=\"bold\">j</span>iipsen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('j');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu (-)j</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">j</span> gëtt wéi e Konsonant ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Eng Schreiwung mat <span class=\"bold\">jh</span> gëtt et am Lëtzebuergeschen net.</p>';			
@@ -643,6 +786,7 @@ function getContent(contentid)
 			break;
 		case 'K' : thecontentbox="<h1>Buschtaf K</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">K</span>innek<br><span class=\"bold\">K</span>lass</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('k');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu (-)k(-)</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">k</span> gëtt ëmmer d’selwecht ausgeschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -655,6 +799,7 @@ function getContent(contentid)
 			break;
 		case 'L' : thecontentbox="<h1>Buschtaf L</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">l</span>aachen<br>ka<span class=\"bold\">l</span><br>mo<span class=\"bold\">l</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('l');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu l</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">l</span> gëtt ëmmer d\'selwecht geschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -667,6 +812,7 @@ function getContent(contentid)
 			break;
 		case 'M' : thecontentbox="<h1>Buschtaf M</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Dra<span class=\"bold\">m</span><br><span class=\"bold\">M</span>ëllech</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('m');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu m</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">m</span> gëtt ëmmer d\'selwecht geschwat.</p>';		
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -681,6 +827,7 @@ function getContent(contentid)
 			thecontentrule='<h1>Regel zu n</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">n</span> gëtt ëmmer d‘selwecht geschwat.</p>';
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'N-NN' : thecontentbox="<h1>Buschtaf nn</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Ka<span class=\"bold\">nn</span>er<br>dë<span class=\"bold\">nn</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-nn');\">&nbsp;</p></div></div>";
@@ -691,7 +838,7 @@ function getContent(contentid)
 			break;
 			case 'N-N' : thecontentbox="<h1>(n) * fällt ewech</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Dammeschong</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu (n) * fält ewech</h1>';
-			thecontentrule+='<p class="rule check">Wann den <span class=\"bold\">n</span> viru verschiddenen Ufanksbuschtawen net geschwat gëtt, da gëtt en och net geschriwwen. Dat gëllt och bei zesummegesate Wierder. </p>';
+			thecontentrule+='<p class="rule check">Wann den <span class=\"bold\">n</span> viru verschiddenen Ufanksbuschtawen net geschwat gëtt, da gëtt en och net geschriwwen. Dat gëllt och bei zesummegesate Wierder.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'N-N2' : thecontentbox="<h1>(n) * bleift stoën</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>äre<span class=\"bold\">n</span> Auto<br>Grompere<span class=\"bold\">n</span>zalot</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n2');\">&nbsp;</p></div></div>";
@@ -701,6 +848,7 @@ function getContent(contentid)
 			break;
 		case 'O' : thecontentbox="<h1>Buschtaf O</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>kr<span class=\"bold\">o</span>mm</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('o');\">&nbsp;</p></div></div><h1>Buschtaf O</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Dr<span class=\"bold\">o</span>t<br>schl<span class=\"bold\">o</span>fen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('o2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu o</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">o</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">o</span> viru just engem Konsonant, gëtt e laang geschwat.</p>';
@@ -729,11 +877,12 @@ function getContent(contentid)
 			break;
 		case 'P' : thecontentbox="<h1>Buschtaf P</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Tra<span class=\"bold\">p</span><br><span class=\"bold\">P</span>oul<br>kla<span class=\"bold\">p</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('p');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu (-)p(-)</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">p</span> gëtt ëmmer d‘selwecht geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'P-PP' : thecontentbox="<h1>Buschtaf r</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Zo<span class=\"bold\">pp</span><br>kla<span class=\"bold\">pp</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('p-pp');\">&nbsp;</p></div></div>";
+			case 'P-PP' : thecontentbox="<h1>Buschtaf pp</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Zo<span class=\"bold\">pp</span><br>kla<span class=\"bold\">pp</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('p-pp');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu pp</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">pp</span> gëtt ëmmer d‘selwecht geschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Virun <span class=\"bold\">pp</span> gëtt de Vokal virdru kuerz ausgeschwat.</p>';
@@ -751,6 +900,7 @@ function getContent(contentid)
 			break;
 		case 'R' : thecontentbox="<h1>Buschtaf R</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">r</span>ichteg<br>K<span class=\"bold\">r</span>aaft<br><span class=\"bold\">r</span>aschten</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('r');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu r</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">r</span> gëtt am Ufank an an der Mëtt vum Wuert an der Strass geschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Lauschtert den Audio.</p>';			
@@ -765,7 +915,7 @@ function getContent(contentid)
 			case 'R-R2' : thecontentbox="<h1>Buschtaf -r</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Hie<span class=\"bold\">r</span>scht<br>Wie<span class=\"bold\">r</span>der<br>Wue<span class=\"bold\">r</span>t</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('r-r2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu -r-</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">r</span> gëtt geschriwwen, mee net geschwat.</p>';		
-			thecontentrule+='<h2>Remark</h2><p class="remark">Dësen <span class=\"bold\">r</span> gëtt geschriwwen, wann dat däitscht Parallelwuert och en <span class=\"bold\">r</span> huet: <span class=\"bold\">Wierder</span> (Wörter), awer <span class=\"bold\">Wieder</span> (Wetter)</p>';	
+			thecontentrule+='<h2>Remark</h2><p class="remark">Dësen <span class=\"bold\">r</span> gëtt geschriwwen, wann dat däitscht Parallelwuert och en <span class=\"bold\">r</span> huet: <span class=\"bold\">Wierder</span> (Wörter), awer <span class=\"bold\">Wieder</span> (Wetter).</p>';	
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'R-RR' : thecontentbox="<h1>Buschtaf -rr-</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Te<span class=\"bold\">rr</span>ain<br>Ba<span class=\"bold\">rr</span>ikaden<br>Fu<span class=\"bold\">rr</span>i</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('r-rr');\">&nbsp;</p></div></div>";
@@ -773,8 +923,9 @@ function getContent(contentid)
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">rr</span> gëtt an der Mëtt vum Wuert wéi en <span class=\"bold\">r</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		case 'S' : thecontentbox="<h1>Buschtaf S</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">S</span>aachen<br><span class=\"bold\">S</span>aier<br>Kee<span class=\"bold\">s</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('s');\">&nbsp;</p></div></div><h1>Buschtaf S</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">s</span>uper<br><span class=\"bold\">S</span>ylvester</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('s2');\">&nbsp;</p></div></div>";
+		case 'S' : thecontentbox="<h1>Buschtaf S</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">S</span>aachen<br><span class=\"bold\">S</span>aier<br>Kee<span class=\"bold\">s</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('s');\">&nbsp;</p></div></div><h1>Buschtaf S</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">s</span>uper<br><span class=\"bold\">S</span>ilvester</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('s2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu s</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">s</span> gëtt am Ufank an an der Mëtt vum Wuert mëll geschwat.</p>';			
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">s</span> gëtt am Ufank vum Wuert schaarf ausgeschwat.</p>';	
@@ -820,6 +971,7 @@ function getContent(contentid)
 			break;
 		case 'T' : thecontentbox="<h1>Buschtaf T</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Bla<span class=\"bold\">t</span><br><span class=\"bold\">T</span>rap</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('t');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu t</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">t</span> gëtt ëmmer d‘selwecht geschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -838,6 +990,7 @@ function getContent(contentid)
 			break;
 		case 'U' : thecontentbox="<h1>Buschtaf U</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>N<span class=\"bold\">u</span>mmer<br>B<span class=\"bold\">u</span>schtaf</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('u');\">&nbsp;</p></div></div><h1>Buschtaf U</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>T<span class=\"bold\">u</span>ba<br>T<span class=\"bold\">u</span>t</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('u2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu u</h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">u</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';			
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">u</span> viru just engem Konsonant, gëtt e laang geschwat.</p>';			
@@ -873,6 +1026,7 @@ function getContent(contentid)
 			break;
 		case 'V' : thecontentbox="<h1>Buschtaf V</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">V</span>illchen<br><span class=\"bold\">v</span>erléieren<br><span class=\"bold\">v</span>iischt</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('v');\">&nbsp;</p></div></div><h1>Buschtaf V</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">V</span>anill<br><span class=\"bold\">V</span>as<br><span class=\"bold\">V</span>akanz<br><span class=\"bold\">V</span>ott<br>Re<span class=\"bold\">v</span>isioun</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('v2');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu v</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">v</span> gëtt am Ufank vum Wuert wéi en <span class=\"bold\">f</span> ausgeschwat.</p>';			
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">v</span> gëtt am Ufank an an der Mëtt vum Wuert wéi en <span class=\"bold\">w</span> ausgeschwat.</p>';		
@@ -887,6 +1041,7 @@ function getContent(contentid)
 			break;
 		case 'W' : thecontentbox="<h1>Buschtaf W</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">w</span>aarm<br><span class=\"bold\">w</span>ibbelen<br>a<span class=\"bold\">w</span>er<br>Léi<span class=\"bold\">w</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('w');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu w</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">w</span> gëtt ëmmer d‘selwecht geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -898,17 +1053,20 @@ function getContent(contentid)
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 		case 'X' : thecontentbox="<h1>Buschtaf X</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Mi<span class=\"bold\">x</span>er<br>He<span class=\"bold\">x</span><br><span class=\"bold\">X</span>ylophon</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('x');\">&nbsp;</p></div></div>";
+		if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu x</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">x</span> gëtt wéi <span class=\"bold\">k</span> an <span class=\"bold\">s</span> geschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 		case 'Y' : thecontentbox="<h1>Buschtaf Y</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>trend<span class=\"bold\">y</span><br>Ps<span class=\"bold\">y</span>chologie</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('y');\">&nbsp;</p></div></div>";
+		if(direct) { subselector=false; }	
 			thecontentrule='<h1>Regel zu y</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">y</span> gëtt wéi en <span class=\"bold\">i</span> geschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 		case 'Z' : thecontentbox="<h1>Buschtaf Z</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Ka<span class=\"bold\">z</span><br><span class=\"bold\">Z</span>alot<br>ver<span class=\"bold\">z</span>ielen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('z');\">&nbsp;</p></div></div>";
 			subselector=true; hash=contentid;
+			if(direct) { subselector=false; }
 			thecontentrule='<h1>Regel zu z</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">z</span> gëtt wéi <span class=\"bold\">t</span> an <span class=\"bold\">s</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -918,7 +1076,7 @@ function getContent(contentid)
 			thecontentrule+='<p class="rule check">De Konsonantegrupp <span class=\"bold\">tz</span> gëtt an der Mëtt an um Enn vum Wuert wéi <span class=\"bold\">t</span> an <span class=\"bold\">s</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dréck op e Buschtaf fir déi entspriechend Wierder, souwéi och d'Regelen ugewisen ze kréien.</h2>";
+		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dréck op e Buschtaf, fir déi entspriechend Wierder souwéi och d'Regele gewisen ze kréien.</h2>";
 			thecontentrule='<h1>Eng Zesummenaarbecht vun</h1><h2>Autisme Luxembourg a.s.b.l.</h2><h2>Lëtzebuerger Online Dictionnaire</h2><img src="css/res/KonterbontLogo_Cover-02.png" class="logokonterbont">';
 			result='start';
 			$$('#thesubnavbar').addClass('hide-tabbar');
@@ -938,6 +1096,8 @@ function getContent(contentid)
 function jumpsel(jp,hs,subsel,cont)
 {
 	result=cont.charCodeAt(0)+' '+cont;
+	//console.log(subsel);
+	if(!(subsel)){$$('#swiper-sub').addClass('hidesub');}
 	jumpto(jp,hs,subsel);
 	return result;
 }
