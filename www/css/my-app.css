@@ -51,15 +51,28 @@ html {
 	background-image: url('../img/tutorialicon5.png');
 }
 
-.bold {
+.bold, .boldwunderline {
 	/* font-family: "Raleway-Bold"; */
 	/*line-height: 29.5px;
 	vertical-align: bottom;*/
+	color: #2d64bc;
 	font-weight: bold;
+	text-decoration: underline;
+	/* text-decoration-style: wavy; */
+	text-decoration-color: #2d64bc;
+}
+
+.boldstrike {
+	color: #2d64bc;
+	font-weight: bold;
+	text-decoration: line-through;
+	/* text-decoration-style: wavy; */
+	text-decoration-color: #2d64bc;
 }
 
 h1 .bold {
 	/*line-height: 41px;*/
+	text-decoration: none;
 }
 
 .semibold {
