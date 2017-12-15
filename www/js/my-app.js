@@ -688,24 +688,24 @@ $$('.logokonterbont').click(function () {
 
 var helpText = [{
 		id: 'slide0',
-		picture: '<div class="tutorialicon tutorialicon1"></div>',
-		text: '1.'
+		picture: '<div class="tutorialicon helpicon1"></div>',
+		text: 'De Menu<br>vun uewe no ennen: Wiederlëscht, Startsäit, Informatiounen'
 	}, {
 		id: 'slide1',
-		picture: '<div class="tutorialicon tutorialicon2"></div>',
-		text: '2.'
+		picture: '<div class="tutorialicon helpicon2"></div>',
+		text: 'Buschtaf auswielen'
 	}, {
 		id: 'slide2',
-		picture: '<div class="tutorialicon tutorialicon3"></div>',
-		text: '3.'
+		picture: '<div class="tutorialicon helpicon3"></div>',
+		text: 'Regel uweisen'
 	}, {
 		id: 'slide3',
-		picture: '<div class="tutorialicon tutorialicon4"></div>',
-		text: '4.'
+		picture: '<div class="tutorialicon helpicon4"></div>',
+		text: 'Toun oofspillen'
 	}, {
 		id: 'slide4',
-		picture: '<div class="tutorialicon tutorialicon5"></div>',
-		text: '5.'
+		picture: '<div class="tutorialicon helpicon5"></div>',
+		text: 'D\'Wierderlëscht'
 	}];
 
 $$('#helpbutton').click(function () {

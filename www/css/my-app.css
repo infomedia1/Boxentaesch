@@ -51,6 +51,12 @@ html {
 	background-image: url('../img/tutorialicon5.png');
 }
 
+.helpicon1 {	background-image: url('../img/IMG_0020_.png');	}
+.helpicon2 {	background-image: url('../img/IMG_0022_.png');	}
+.helpicon3 {	background-image: url('../img/IMG_0024_.png');	}
+.helpicon4 {	background-image: url('../img/IMG_0026_.png');	}
+.helpicon5 {	background-image: url('../img/IMG_0021_.png');	}
+
 .bold, .boldwunderline {
 	/* font-family: "Raleway-Bold"; */
 	/*line-height: 29.5px;
