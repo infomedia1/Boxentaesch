@@ -667,7 +667,7 @@ if (!tour || tour == "0") {
 	myApp.welcomescreen(welcomeText, {
 		'bgcolor': '#1e5799',
 		'fontcolor': '#fafafa',
-		'closeButtonText': 'iwwersprangen',
+		'closeButtonText': 'zoumaachen',
 		'onClosed': function() {
 					localStorage.setItem("tour", "1"); // will not make the tour run again
 			}
@@ -686,19 +686,34 @@ $$('.logokonterbont').click(function () {
   openStore();  
 });
 
+var helpText = [{
+		id: 'slide0',
+		picture: '<div class="tutorialicon tutorialicon1"></div>',
+		text: '1.'
+	}, {
+		id: 'slide1',
+		picture: '<div class="tutorialicon tutorialicon2"></div>',
+		text: '2.'
+	}, {
+		id: 'slide2',
+		picture: '<div class="tutorialicon tutorialicon3"></div>',
+		text: '3.'
+	}, {
+		id: 'slide3',
+		picture: '<div class="tutorialicon tutorialicon4"></div>',
+		text: '4.'
+	}, {
+		id: 'slide4',
+		picture: '<div class="tutorialicon tutorialicon5"></div>',
+		text: '5.'
+	}];
+
 $$('#helpbutton').click(function () {
-  if (!tour || tour == "0") {
-	myApp.welcomescreen.open(); 
-  } else {
-	myApp.welcomescreen(welcomeText, {
+	myApp.welcomescreen(helpText, {
 		'bgcolor': '#1e5799',
 		'fontcolor': '#fafafa',
-		'closeButtonText': 'iwwersprangen',
-		'onClosed': function() {
-					localStorage.setItem("tour", "1"); // will not make the tour run again
-			}
+		'closeButtonText': 'zoumaachen'
 	});
-  }
 });
 
 $$(document).on('click', '.tutorial-next-link', function (e) {

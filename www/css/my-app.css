@@ -134,27 +134,36 @@ h1, h2, h3, h4, h5, h6 {
 	width:80%;
 	margin-bottom: 10%;
 }
+
+.logokonterbont60 {
+	width: 60%;
+}
 .logolod {
 	/* background-image: url('res/LOD_logo_white-lu.png'); */
 	width:70%;
 }
-@media (min-width: 1024px) {
-	.logokonterbont {
-		/* background-image: url('res/logo_kb.png'); */
-		margin-right:10%;
-		margin-top:20%;
-		margin-bottom: 0%;
-		width:35%;
-	}
-	.logolod {
-		/* background-image: url('res/LOD_logo_white-lu.png'); */
-		width:30%;
-		margin-top:20%;
-	}
-}
 .popuph1, .popuph2 {
 	margin: 5%;
 }
+
+@media (min-width: 1024px) {
+		.logokonterbont {
+			/* background-image: url('res/logo_kb.png'); */
+			/* margin-right:10%; */
+			/* margin-top:20%; */
+			margin-bottom: 0%;
+			width:100%;
+		}
+		.logolod {
+			/* background-image: url('res/LOD_logo_white-lu.png'); */
+			width:40%;
+			/* margin-top:20%; */
+		}
+		.popuph1, .popuph2 {
+		margin: 3%;
+	}
+}
+
 .rule {
 	display: list-item;
 	list-style-type: none;

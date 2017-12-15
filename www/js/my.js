@@ -1216,7 +1216,7 @@ function getContent(contentid,direct)
 			thecontentrule+='<p class="rule check">De Konsonantegrupp <span class=\"bold\">tz</span> gëtt an der Mëtt an um Enn vum Wuert wéi <span class=\"bold\">t</span> an <span class=\"bold\">s</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dréck op e Buschtaf, fir déi entspriechend Wierder souwéi och d'Regele gewisen ze kréien.</h2>";
+		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dréck op e Buschtaf, fir déi entspriechend Wierder souwéi och d'Regele gewisen ze kréien.</h2><img src='css/res/KonterbontLogo_Cover-02.png' class='logokonterbont60'>";
 			thecontentrule='<h1>Eng Zesummenaarbecht vun</h1><h2>Autisme Luxembourg a.s.b.l.</h2><h2>Lëtzebuerger Online Dictionnaire</h2><img src="css/res/KonterbontLogo_Cover-02.png" class="logokonterbont">';
 			result='start';
 			$$('#thesubnavbar').addClass('hide-tabbar');
