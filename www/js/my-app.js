@@ -633,12 +633,11 @@ var mySwiper3 = myApp.swiper('.swiper-3', {
 var mySwiperSub = myApp.swiper('.swiper-sub', {
   pagination:'.swiper-sub .swiper-pagination',
   spaceBetween: 18,
-  slidesPerView: 'auto',
+  slidesPerView: 5,
   effect: 'slide',
   parallax: true,
-  centeredSlides: false,
+  centeredSlides: true,
   zoom: true,
-  direction: 'vertical'
 });
 
 var tour = localStorage.getItem("tour");

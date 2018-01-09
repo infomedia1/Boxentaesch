@@ -2,7 +2,8 @@ var oldhash;
 function closespeeddial(){document.getElementById('thespeeddial').setAttribute('class','speed-dial');}
 function resetApp(){getContent('start'); setupPush();closespeeddial();}
 	//;gotoAppStore("id1200014540","com.konterbont.boxentaesch");}
-function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
+// function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
+function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);initSubselector(hash);}
 function openpage(siteurl){var onInApp = window.open('http://'+siteurl, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');}
 function playAudio(audioid)
 {
@@ -152,10 +153,10 @@ function initSubselector(hash)
 			case 'E-UE': jumppoint=9; break;
 			case 'E-IER': jumppoint=10; break;
 			case 'E-UER': jumppoint=11; break;
-			case 'E-ÄER': jumppoint=11; break;
-			case 'E-ÉI': jumppoint=12; break;
-			case 'E-EI': jumppoint=13; break;
-			case 'E-EU': jumppoint=14; break;
+			case 'E-ÄER': jumppoint=12; break;
+			case 'E-ÉI': jumppoint=13; break;
+			case 'E-EI': jumppoint=14; break;
+			case 'E-EU': jumppoint=15; break;
 			
 		}
 		break;
@@ -465,7 +466,7 @@ function initSubselector(hash)
 	oldhash=setoldhash;
 }
 
-function getContent(contentid,direct)
+function getContent(contentid,direct=false)
 {
 	//
 	console.log("GetContent: "+contentid+" "+direct);
@@ -554,24 +555,24 @@ function getContent(contentid,direct)
 			thecontentrule='';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'B-B' : thecontentbox="<h1><span class=\"bold\">b</span> vir oder an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b');\">&nbsp;</p></div></div>";
+			case 'B-B' : thecontentbox="<h1>Buschtaf <span class=\"bold\">b</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">B</span>&#x200A;auer<br><span>Ka&#x200A;</span><span class=\"bold\">b</span><span>&#x200A;es</span><br><span class=\"bold\">b</span>&#x200A;aken</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">b</span></h1>';
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">b</span> mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'B-B2' : thecontentbox="<h1><span class=\"bold\">b</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">b</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b2');\">&nbsp;</p></div></div>";
+			case 'B-B2' : thecontentbox="<h1>Buschtaf <span class=\"bold\">b</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">b</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-b2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-b</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">b</span> um Enn vun engem Wuert, gëtt en haart (d.h. wéi en <span class=\"bold\">p</span>) ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert gëtt de Buschtaf nees mëll ausgeschwat: Wab &#10141; Waben.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'B-BB' : thecontentbox="<h1><span class=\"bold\">bb</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Kra<span class=\"bold\">bb</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-bb');\">&nbsp;</p></div></div>";
+			case 'B-BB' : thecontentbox="<h1>Buschtawen <span class=\"bold\">bb</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Kra<span class=\"bold\">bb</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-bb');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-bb</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">bb</span> um Enn vun engem Wuert, gëtt en haart (d.h. wéi en <span class=\"bold\">p</span>) ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert gëtt de Buschtaf nees mëll ausgeschwat: Krabb &#10141; Krabben.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'B-BB2' : thecontentbox="<h1><span class=\"bold\">bb</span> an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>kli<span class=\"bold\">bb</span>eren<br>Pra<span class=\"bold\">bb</span>eli</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-bb2');\">&nbsp;</p></div></div>";
+			case 'B-BB2' : thecontentbox="<h1>Buschtawen <span class=\"bold\">bb</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>kli<span class=\"bold\">bb</span>eren<br>Pra<span class=\"bold\">bb</span>eli</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('b-bb2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-bb-</span></h1>';
 			thecontentrule+='<p class="rule check">An der Mëtt vum Wuert ass den <span class=\"bold\">bb</span> ëmmer mëll.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -582,31 +583,31 @@ function getContent(contentid,direct)
 			thecontentrule='';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'C-C':thecontentbox="<h1>Den <span class=\"bold\">c</span> um Ufank vum Wuert</h1><h2>Ausgeschwaat wei e <span class=\"bold\">k</span></h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>abinet<br><span class=\"bold\">C</span>abaret<br><span class=\"bold\">c</span>ool</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-c');\">&nbsp;</p></div></div>";
+			case 'C-C':thecontentbox="<h1>Buschtaf <span class=\"bold\">c</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>abinet<br><span class=\"bold\">C</span>abaret<br><span class=\"bold\">c</span>ool</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-c');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">c</span></h1>';
 			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">k</span> ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Kënnt nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span>, gëtt den <span class=\"bold\">c</span> wéi en <span class=\"bold\">s</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'C-C2':thecontentbox="<h1>Den <span class=\"bold\">c</span> um Ufank vum Wuert</h1><h2>Ausgeschwaat wei en <span class=\"bold\">s</span></h2><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>ité<br><span class=\"bold\">C</span>ent</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-c2');\">&nbsp;</p></div></div>";
+			case 'C-C2':thecontentbox="<h1>Buschtaf <span class=\"bold\">c</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">C</span>ité<br><span class=\"bold\">C</span>ent</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-c2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">c</span></h1>';
 			thecontentrule+='<p class="rule check">A frieme Wierder gëtt den <span class=\"bold\">c</span> am Ufank vum Wuert wéi en <span class=\"bold\">s</span> ausgeschwat.</p>'; // C-C
 			thecontentrule+='<h2>Remark</h2><p class="remark">Dëst gëllt just, wann nom <span class=\"bold\">c</span> en <span class=\"bold\">i</span> oder <span class=\"bold\">e</span> kënnt.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'C-CH' : thecontentbox="<h1>Den <span class=\"bold\">ch</span> an der Mëtt oder um Enn vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Bu<span class=\"bold\">ch</span><br>La<span class=\"bold\">ch<br></span>laa<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch');\">&nbsp;</p></div></div>";
+			case 'C-CH' : thecontentbox="<h1>Buschtawen <span class=\"bold\">ch</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Bu<span class=\"bold\">ch</span><br>La<span class=\"bold\">ch<br></span>laa<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">ch</span></h1>';
 			thecontentrule+='<p class="rule check">No engem <span class=\"bold\">a</span>, <span class=\"bold\">o</span> oder <span class=\"bold\">u</span> gëtt den <span class=\"bold\">ch</span> an der Mëtt oder um Enn vum Wuert ëmmer d\'selwecht ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Lauschtert den Audio.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'C-CH2' : thecontentbox="<h1>Den <span class=\"bold\">ch</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Ki<span class=\"bold\">ch</span>el<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch2');\">&nbsp;</p></div></div>";
+			case 'C-CH2' : thecontentbox="<h1>Buschtawen  <span class=\"bold\">ch</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Ki<span class=\"bold\">ch</span>el<span class=\"bold\">ch</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ch2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">ch</span></h1>';
 			thecontentrule+='<p class="rule check">No engem <span class=\"bold\">i</span>, <span class=\"bold\">e</span>, <span class=\"bold\">ee</span> oder <span class=\"bold\">é</span> gëtt den <span class=\"bold\">ch</span> ëmmer d\'selwecht ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Lauschtert den Audio.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'C-CK' : thecontentbox="<h1>Den <span class=\"bold\">ck</span> an der Mëtt oder um Enn vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>zé<span class=\"bold\">ck</span>en<br>schmo<span class=\"bold\">ck</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ck');\">&nbsp;</p></div></div>";
+			case 'C-CK' : thecontentbox="<h1>Buschtawen  <span class=\"bold\">ck</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>zé<span class=\"bold\">ck</span>en<br>schmo<span class=\"bold\">ck</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('c-ck');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">ck</span></h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">ck</span> gëtt ëmmer wéi en <span class=\"bold\">k</span> ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -617,24 +618,24 @@ function getContent(contentid,direct)
 			thecontentrule='';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'D-D' : thecontentbox="<h1>Den <span class=\"bold\">d</span> vir an an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">d</span>af<br><span class=\"bold\">D</span>rot<br>bero<span class=\"bold\">d</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-d');\">&nbsp;</p></div></div>";
+			case 'D-D' : thecontentbox="<h1>Buschtaf <span class=\"bold\">d</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">d</span>af<br><span class=\"bold\">D</span>rot<br>bero<span class=\"bold\">d</span>en</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-d');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-d</span></h1>';
 			thecontentrule+='<p class="rule check">Vir an an der Mëtt vum Wuert gëtt den <span class=\"bold\">d</span> mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'D-D2' : thecontentbox="<h1>Den <span class=\"bold\">d</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Schue<span class=\"bold\">d</span><br>Gra<span class=\"bold\">d</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-d2');\">&nbsp;</p></div></div>";
+			case 'D-D2' : thecontentbox="<h1>Buschtaf <span class=\"bold\">d</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Schue<span class=\"bold\">d</span><br>Gra<span class=\"bold\">d</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-d2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-d</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">d</span> um Enn vun engem Wuert, gëtt en haart (d.h. wéi en <span class=\"bold\">t</span>) ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert, gëtt den <span class=\"bold\">d</span> nees mëll ausgeschwat: Grad &#10141; Graden.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'D-DD' : thecontentbox="<h1>Den <span class=\"bold\">dd</span> um Enn vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Schma<span class=\"bold\">dd</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-dd');\">&nbsp;</p></div></div>";
+			case 'D-DD' : thecontentbox="<h1>Buschtawen  <span class=\"bold\">dd</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Schma<span class=\"bold\">dd</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-dd');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-dd</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">dd</span> um Enn vun engem Wuert, gëtt en haart (d.h. wéi en <span class=\"bold\">t</span>) ausgeschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert, gëtt den <span class=\"bold\">dd</span> nees mëll ausgeschwat: Lidd &#10141; Lidder.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'D-DD2' : thecontentbox="<h1><span class=\"bold\">dd</span> an der Mëtt vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Klu<span class=\"bold\">dd</span>er<br>fi<span class=\"bold\">dd</span>eren<br>kri<span class=\"bold\">dd</span>elen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-dd2');\">&nbsp;</p></div></div>";
+			case 'D-DD2' : thecontentbox="<h1>Buschtawen <span class=\"bold\">dd</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Klu<span class=\"bold\">dd</span>er<br>fi<span class=\"bold\">dd</span>eren<br>kri<span class=\"bold\">dd</span>elen</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('d-dd2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">-dd-</span></h1>';
 			thecontentrule+='<p class="rule check">An der Mëtt vum Wuert ass den <span class=\"bold\">dd</span> ëmmer mëll.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -645,11 +646,11 @@ function getContent(contentid,direct)
 			if(direct) { subselector=false; }
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'E-E' : thecontentbox="<h1>Den kuerzen <span class=\"bold\">e</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>P<span class=\"bold\">e</span>ch<br>fr<span class=\"bold\">e</span>ch<br>k<span class=\"bold\">e</span>ng<br>Str<span class=\"bold\">e</span>nz</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-e');\">&nbsp;</p></div></div>";
+			case 'E-E' : thecontentbox="<h1>Buschtaf <span class=\"bold\">e</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>P<span class=\"bold\">e</span>ch<br>fr<span class=\"bold\">e</span>ch<br>k<span class=\"bold\">e</span>ng<br>Str<span class=\"bold\">e</span>nz</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-e');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>kuerzen <span class=\"bold\">e</span></h1><p class="rule check">Den <span class=\"bold\">e</span> gëtt kuerz geschwat a kritt keen extrat Zeechen.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'E-E2' : thecontentbox="<h1>Den laangen <span class=\"bold\">e</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Athl<span class=\"bold\">e</span>t<br>Alphab<span class=\"bold\">e</span>t<br>M<span class=\"bold\">e</span>ter</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-e2');\">&nbsp;</p></div></div>";
+			case 'E-E2' : thecontentbox="<h1>Buschtaf <span class=\"bold\">e</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Athl<span class=\"bold\">e</span>t<br>Alphab<span class=\"bold\">e</span>t<br>M<span class=\"bold\">e</span>ter</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('e-e2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>laangen <span class=\"bold\">e</span></h1><p class="rule check">Den <span class=\"bold\">e</span> gëtt laang geschwat, awer just <span class=\"bold\">e</span> geschriwwen.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Op <a href=\"http://ortho.lod.lu\" class=\"lodlink\" onclick=\"javascript:openpage(\'ortho.lod.lu\')\">ortho.lod.lu</a> fannt Dir méi Informatiounen iwwert d‘Schreifweis vum <span class=\"bold\">e</span> an iwwert d‘Friemwierder.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -763,30 +764,30 @@ function getContent(contentid,direct)
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">g</span> gëtt am Ufank an an der Mëtt vum Wuert mëll ausgeschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'G-G2' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span> an der Mëtt vum Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Spi<span class=\"bold\">g</span>el<br>I<span class=\"bold\">g</span>el</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g2');\">&nbsp;</p></div></div>";
+			case 'G-G2' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Spi<span class=\"bold\">g</span>el<br>I<span class=\"bold\">g</span>el</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g2');\">&nbsp;</p></div></div>";
 				thecontentrule='<h1>Regel zu <span class=\"bold\">-g-</span></h1>';
 				thecontentrule+='<p class="rule check">Den <span class=\"bold\">g</span> gëtt an der Mëtt vum Wuert wéi e mëllen <span class=\"bold\">ch</span> ausgeschwat.</p>';
 				result=jumpsel(jumppoint, hash, subselector, contentid);
 				break;
-			case 'G-G3' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span> um Enn vun engem Wuert an wei en k ausgeschwat</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>va<span class=\"bold\">g</span><br>Fi<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g3');\">&nbsp;</p></div></div>";
+			case 'G-G3' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>va<span class=\"bold\">g</span><br>Fi<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g3');\">&nbsp;</p></div></div>";
 				thecontentrule='<h1>Regel zu <span class=\"bold\">-g</span></h1>';
 				thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">g</span> um Enn vun engem Wuert, gëtt e meeschtens haart (d.h. wéi en <span class=\"bold\">k</span>) ausgeschwat.</p>';
 				thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert, gëtt de Buschtaf nees mëll ausgeschwat: Fig &#10141; Figen.</p>';
 				result=jumpsel(jumppoint, hash, subselector, contentid);
 				break;
-			case 'G-G4' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span> um Enn vun engem Wuert an wei en ch ausgeschwat</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Belee<span class=\"bold\">g</span><br>Bier<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g4');\">&nbsp;</p></div></div>";
+			case 'G-G4' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Belee<span class=\"bold\">g</span><br>Bier<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g4');\">&nbsp;</p></div></div>";
 				thecontentrule='<h1>Regel zu <span class=\"bold\">-g</span></h1>';
 				thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">g</span> um Enn vun engem Wuert, gëtt en wéi en <span class=\"bold\">ch</span> ausgeschwat.</p>';
 				thecontentrule+='<h2>Remark</h2><p class="remark">Gëtt dat Wuert verlängert, gëtt den <span class=\"bold\">g</span> wéi e mëllen <span class=\"bold\">ch</span> ausgeschwat: Bierg &#10141; Bierger.</p>';
 				result=jumpsel(jumppoint, hash, subselector, contentid);
 				break;
-			case 'G-G5' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span> um Enn vun engem Wuert an hannen an der Strass geschwat</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>La<span class=\"bold\">g</span><br>Da<span class=\"bold\">g</span><br>klu<span class=\"bold\">g</span><br>Katalo<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g5');\">&nbsp;</p></div></div>";
+			case 'G-G5' : thecontentbox="<h1>Buschtaf <span class=\"bold\">-g</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>La<span class=\"bold\">g</span><br>Da<span class=\"bold\">g</span><br>klu<span class=\"bold\">g</span><br>Katalo<span class=\"bold\">g</span></h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-g5');\">&nbsp;</p></div></div>";
 				thecontentrule='<h1>Regel zu <span class=\"bold\">-g</span></h1>';
 				thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">g</span> um Enn vun engem Wuert, gëtt en hannen an der Strass geschwat.</p>';
 				thecontentrule+='<h2>Remark</h2><p class="remark">Dëst gëllt just, wa virdrun en <span class=\"bold\">a</span>, <span class=\"bold\">o</span> oder <span class=\"bold\">u</span> steet.</p>';
 				result=jumpsel(jumppoint, hash, subselector, contentid);
 				break;
-			case 'G-GG' : thecontentbox="<h1>Buschtawen <span class=\"bold\">gg</span> an der Mëtt vun engem Wuert</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">gg</span>on<br>Ba<span class=\"bold\">gg</span>er</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-gg');\">&nbsp;</p></div></div>";
+			case 'G-GG' : thecontentbox="<h1>Buschtawen <span class=\"bold\">gg</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Wa<span class=\"bold\">gg</span>on<br>Ba<span class=\"bold\">gg</span>er</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('g-gg');\">&nbsp;</p></div></div>";
 				thecontentrule='<h1>Regel zu <span class=\"bold\">-gg-</span></h1>';
 				thecontentrule+='<p class="rule check">Den <span class=\"bold\">gg</span> gëtt an der Mëtt vum Wuert mëll ausgeschwat.</p>';
 				thecontentrule+='<h2>Remark</h2><p class="remark">Virun <span class=\"bold\">gg</span> gëtt de Vokal virdru kuerz ausgeschwat.</p>';				
@@ -821,13 +822,13 @@ function getContent(contentid,direct)
 			thecontentrule='';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'I-I': thecontentbox="<h1>Buschtaf <span class=\"bold\">i</span> virun engem Konsonant</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Z<span class=\"bold\">i</span>l<br>n<span class=\"bold\">i</span>mols</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i-i');\">&nbsp;</p></div></div>";
+			case 'I-I': thecontentbox="<h1>Buschtaf <span class=\"bold\">i</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Z<span class=\"bold\">i</span>l<br>n<span class=\"bold\">i</span>mols</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i-i');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">i</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">i</span> viru just engem Konsonant, gëtt e laang geschwat.</p>';
 			thecontentrule+='<h2>Remark</h2><p class="remark">Den <span class=\"bold\">ie</span> gëtt am Lëtzebuergeschen net benotzt, fir den <span class=\"bold\">i</span> méi laang ze maachen.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'I-I2': thecontentbox="<h1>Buschtaf <span class=\"bold\">i</span> virun zwee oder méi Konsonanten</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>d<span class=\"bold\">i</span>cht<br><span class=\"bold\">I</span>nsel<br>Sp<span class=\"bold\">i</span>ll</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i-i2');\">&nbsp;</p></div></div>";
+			case 'I-I2': thecontentbox="<h1>Buschtaf <span class=\"bold\">i</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>d<span class=\"bold\">i</span>cht<br><span class=\"bold\">I</span>nsel<br>Sp<span class=\"bold\">i</span>ll</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('i-i2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu <span class=\"bold\">i</span></h1>';
 			thecontentrule+='<p class="rule check">Steet den <span class=\"bold\">i</span> virun zwee oder méi Konsonanten, gëtt e kuerz geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -928,12 +929,12 @@ function getContent(contentid,direct)
 			thecontentrule+='<h2>Remark</h2><p class="remark">Virun <span class=\"bold\">nn</span> gëtt de Vokal virdru kuerz ausgeschwat.</p>';			
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'N-N2' : thecontentbox="<h1>(<span class=\"bold\">n</span>) * fällt ewech</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Dammeschong</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n2');\">&nbsp;</p></div></div>";
+			case 'N-N2' : thecontentbox="<h1>(<span class=\"bold\">n</span>) * fält ewech</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>Dammeschong</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n2');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu (<span class=\"bold\">n</span>) * fält ewech</h1>';
 			thecontentrule+='<p class="rule check">Wann den <span class=\"bold\">n</span> viru verschiddenen Ufanksbuschtawen net geschwat gëtt, da gëtt en och net geschriwwen. Dat gëllt och bei zesummegesate Wierder.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
-			case 'N-N3' : thecontentbox="<h1>(<span class=\"bold\">n</span>) * bleift stoën</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>äre<span class=\"bold\">n</span> Auto<br>Grompere<span class=\"bold\">n</span>zalot</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n3');\">&nbsp;</p></div></div>";
+			case 'N-N3' : thecontentbox="<h1>(<span class=\"bold\">n</span>) * bleift stoen</h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2>äre<span class=\"bold\">n</span> Auto<br>Grompere<span class=\"bold\">n</span>zalot</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('n-n3');\">&nbsp;</p></div></div>";
 			thecontentrule='<h1>Regel zu (<span class=\"bold\">n</span>) * bleift stoen</h1>';
 			thecontentrule+='<p class="rule check">Den <span class=\"bold\">n</span> bleift stoe virun all de Vokalen <span class=\"bold\">a, e, i, o, u, ä, ë, é, ö, ü,(y)</span> a virun de Konsonanten: <span class=\"bold\">d, h, n, t, z</span>. Den <span class=\"bold\">n</span> bleift och stoen um Enn vun Eegennimm a virun engem Sazzeechen <span class=\"bold\">. , ; : )</span>.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
@@ -1165,10 +1166,7 @@ function getContent(contentid,direct)
 		case 'V' : thecontentbox="";
 			subselector=true; hash=contentid;
 			if(direct) { subselector=false; }
-			thecontentrule='<h1>Regel zu <span class=\"bold\">v</span></h1>';
-			thecontentrule+='<p class="rule check">Den <span class=\"bold\">v</span> gëtt am Ufank vum Wuert wéi en <span class=\"bold\">f</span> ausgeschwat.</p>';			
-			thecontentrule+='<p class="rule check">Den <span class=\"bold\">v</span> gëtt am Ufank an an der Mëtt vum Wuert wéi en <span class=\"bold\">w</span> ausgeschwat.</p>';		
-			thecontentrule+='<h2>Remark</h2><p class="remark">Op <a href=\"http://ortho.lod.lu\" class=\"lodlink\" onclick=\"javascript:openpage(\'ortho.lod.lu\')\">ortho.lod.lu</a> fannt Dir méi Informatiounen iwwert d‘Schreifweis vun de Friemwierder.</p>';			
+			thecontentrule='';		
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
 			case 'V-V' : thecontentbox="<h1>Buschtaf <span class=\"bold\">v</span></h1><div class=\"floating-container\"><div class=\"left-content-block\"><h2><span class=\"bold\">V</span>illchen<br><span class=\"bold\">v</span>erléieren<br><span class=\"bold\">v</span>iischt</h2></div><div class=\"right-content-block\"><p class=\"round-play-button toun-icon\" href=\"#\" onclick=\"playAudio('v-v');\">&nbsp;</p></div></div>";
@@ -1268,18 +1266,21 @@ function getContent(contentid,direct)
 
 function jumpsel(jp,hs,subsel,cont)
 {
+	var thecontentbox= $$('#thecontent').html();
 	result=cont.charCodeAt(0)+' '+cont;
 	//console.log(subsel);
-	if(!(subsel)){$$('#swiper-sub').addClass('hidesub');}
+	// if(!(subsel)){$$('#swiper-sub').addClass('hidesub');}
 	jumpto(jp,hs,subsel);
 	return result;
 }
 function setSwiperHeight(countelems)
 {
+	/*
 	var countedheight;
 	countedheight= (($$(window).height() - 100) -(countelems * 18) ) / countelems;
 	$$('#swiper-sub .swiper-slide').css("height", countedheight+"px");
 	//$$('#eisbuchstaawen').css("height", "100px");
 	console.log('Set H to:'+countelems+" "+countedheight);
 	return true;
+	*/
 }
