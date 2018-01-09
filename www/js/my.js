@@ -267,8 +267,8 @@ function initSubselector(hash)
 		case 'N': 
 			newslides=	['<div class="swiper-slide" onclick="getContent(\'N-N\');"><span>n</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'N-NN\');"><span>nn</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N2\');"><span>(n)* fält ewech</span></div>',
-						'<div class="swiper-slide" onclick="getContent(\'N-N3\');"><span>(n) * bleift stoen</span></div>'];
+						'<div class="swiper-slide" onclick="getContent(\'N-N2\');"><span>(̶n̶)*</span></div>',
+						'<div class="swiper-slide" onclick="getContent(\'N-N3\');"><span>(n)*</span></div>'];
 						setoldhash=hash[0];
 						countElems=4;
 		switch(hash)
@@ -441,7 +441,7 @@ function initSubselector(hash)
 		}
 		break;
 		case 'Z': 
-			newslides=	['<div class="swiper-slide" onclick="getContent(\'Z-TZ\');"><span>z</span></div>',
+			newslides=	['<div class="swiper-slide" onclick="getContent(\'Z-Z\');"><span>z</span></div>',
 						'<div class="swiper-slide" onclick="getContent(\'Z-TZ\');"><span>&#8722;tz(&#8722;)</span></div>'];
 						setoldhash=hash[0];
 						countElems=2;
