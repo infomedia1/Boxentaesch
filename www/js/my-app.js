@@ -7,7 +7,7 @@ var Player = {
 	initMedia: function (path) {
 		Player.media = new Media(path,
 								function () {
-									
+
 									if (Player.media !== null)
 									{
 										Player.media.release();
@@ -28,7 +28,7 @@ var Player = {
 							);
 	},
 	play: function(path) {
-		
+
 		if (cordova.platformId=='android') {
 			var mediasrc='/android_asset/www/audio/';
 		} else {
@@ -37,7 +37,7 @@ var Player = {
 		$$('.player-play-icon').css('background-image','url(\'css/res/play50.png\')');
 		$$('.bar').css('animation-play-state','running');
 		path=mediasrc + path;
-		
+
 		if (Player.media != null)
 		{
 			if(Player.isPlaying == true)
@@ -79,7 +79,7 @@ $$('.player-play-icon').css('background-image','url(\'css/res/pause50.png\')');
 			var mediasrc='audio/';
 		}
 		path=mediasrc + path;
-		
+
 		if ((Player.media === null) || (Player.media.src!=path))
 		{
 			if(Player.isPlaying === true)
@@ -95,7 +95,7 @@ $$('.player-play-icon').css('background-image','url(\'css/res/pause50.png\')');
 			}
 			console.log('Init');
 		}
-		
+
 		if (Player.isPlaying === false)
 		{
 			Player.media.play();
@@ -178,7 +178,7 @@ var setupPush = function() {
 			   'Do you want to check out some new music from ' + artist + '?',
 			   function(buttonIndex) {
 				 if (buttonIndex === 1) {
-				  
+
 				 }
 			   },
 			  'New Music',
@@ -338,10 +338,10 @@ var context = {
 			{ wuert: 'Fi<span class=\"boldwunderline\">g</span>', jumppoint: 'G-G3' },
 			{ wuert: 'fo<span class=\"boldwunderline\">ll</span>egen', jumppoint: 'L-LL' },
 			{ wuert: 'F<span class=\"boldwunderline\">ö</span>n', jumppoint: 'O-Ö' },
-			{ wuert: 'fr<span class=\"boldwunderline\">e</span>ch', jumppoint: 'E-E' },	
-			{ wuert: 'fr<span class=\"boldwunderline\">ie</span>m', jumppoint: 'I-IE' },	
-			{ wuert: 'Fri<span class=\"boldwunderline\">g</span>o', jumppoint: 'G-G' },	
-			{ wuert: 'Fu<span class=\"boldwunderline\">rr</span>i', jumppoint: 'R-RR' }	
+			{ wuert: 'fr<span class=\"boldwunderline\">e</span>ch', jumppoint: 'E-E' },
+			{ wuert: 'fr<span class=\"boldwunderline\">ie</span>m', jumppoint: 'I-IE' },
+			{ wuert: 'Fri<span class=\"boldwunderline\">g</span>o', jumppoint: 'G-G' },
+			{ wuert: 'Fu<span class=\"boldwunderline\">rr</span>i', jumppoint: 'R-RR' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'G', wierder: [
 			{ wuert: 'g<span class=\"boldwunderline\">aa</span>psen', jumppoint: 'A-AA' },
@@ -549,7 +549,7 @@ var context = {
 			{ wuert: '<span class=\"boldwunderline\">X</span>ylophon', jumppoint: 'X-X' }
 		], showbuchstaaf: true },
 		{ denBuchstaaf: 'Y', wierder: [
-		
+
 		], showbuchstaaf: false },
 		{ denBuchstaaf: 'Z', wierder: [
 			{ wuert: 'Za<span class=\"boldwunderline\">ck</span>', jumppoint: 'K-CK' },
@@ -577,7 +577,7 @@ $$('#thesideblock').html(html);
 var myApp = new Framework7({
     material: true,
 	panelRightBreakpoint: 1024,
-	
+
 	onAjaxStart: function (xhr) {
         myApp.showIndicator();
 		console.log('Init start');
@@ -590,20 +590,23 @@ var myApp = new Framework7({
     },
 	onPageInit: function (page) {
 		//setupPush();
-	}
+	},
+	popup: {
+    closeByBackdropClick: true,
+  }
 });
 
-if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) 
-{ 
-	document.addEventListener("deviceready", onDeviceReady, false); 
-} else { 
-	onDeviceReady(); 
+if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
+{
+	document.addEventListener("deviceready", onDeviceReady, false);
+} else {
+	onDeviceReady();
 }
 function onDeviceReady()
 {
 	console.log('deviceready hook');
 	prepareAudioPlayer();
-	
+
 };
 
 // Export selectors engine
@@ -678,11 +681,11 @@ $$(document).on('click', '.tutorial-close-btn', function () {
 });
 
 $$('.tutorial-open-btn').click(function () {
-  myApp.welcomescreen.open();  
+  myApp.welcomescreen.open();
 });
 
 $$('.logokonterbont').click(function () {
-  openStore();  
+  openStore();
 });
 
 var helpText = [{
@@ -715,26 +718,32 @@ $$('#helpbutton').click(function () {
 	});
 });
 
+$$('#mercibutton').click(function () {
+	myApp.closeModal('.popup-about');
+	showMerci();
+
+});
+
 $$(document).on('click', '.tutorial-next-link', function (e) {
-  myApp.welcomescreen.next(); 
+  myApp.welcomescreen.next();
 });
 
 $$(document).on('click', '.tutorial-previous-slide', function (e) {
-  myApp.welcomescreen.previous(); 
+  myApp.welcomescreen.previous();
 });
 
 /*
 $$(document).on('click', 'icon-bars', function (e) {
 	$$('.tab-link').attr('height','0px');
-});		
+});
 */
 /*
 myApp.onPageInit('index', function() {
-    
+
 }).trigger();
 */
-		
-		
+
+
 		/*
  push.on('registration', function(data) {
             console.log('registration event: ' + data.registrationId);
@@ -746,12 +755,9 @@ myApp.onPageInit('index', function() {
                 // Post registrationId to your app server as the value has changed
             }
 
-		
-			
+
+
 			$$('#thecontent').html($$('#thecontent').html + '<h1>'+data.registrationId+'</h1>');
-		
-        });		
+
+        });
 		*/
-
-
-

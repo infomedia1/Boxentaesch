@@ -1,6 +1,7 @@
 var oldhash;
 function closespeeddial(){document.getElementById('thespeeddial').setAttribute('class','speed-dial');}
 function resetApp(){getContent('start'); setupPush();closespeeddial();}
+function showMerci(){getContent('merci'); closespeeddial();}
 	//;gotoAppStore("id1200014540","com.konterbont.boxentaesch");}
 // function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);if(subselector){initSubselector(hash);} else {oldhash='';}}
 function jumpto(jumppoint,hash,subselector){mySwiper3.slideTo(jumppoint,650);initSubselector(hash);}
@@ -1247,6 +1248,21 @@ function getContent(contentid,direct=false)
 			thecontentrule+='<p class="rule check">De Konsonantegrupp <span class=\"bold\">tz</span> gëtt an der Mëtt an um Enn vum Wuert wéi <span class=\"bold\">t</span> an <span class=\"bold\">s</span> geschwat.</p>';
 			result=jumpsel(jumppoint, hash, subselector, contentid);
 			break;
+			case 'merci' : thecontentbox="<h1>Merci soë mir:</h1>";
+			thecontentbox+='<p class="merci soc">Banque et Caisse d\'Epargne de l\'Etat Luxembourg, Cooperations sc, de Kär asbl, Eida s.a., Hospilux s.a., Instudio sarl, Schuler&nbsp;sarl, Seniorentreff&nbsp;Gemeng&nbsp;Kaerch&nbsp;asbl, Tricentenaire&nbsp;asbl</p>';
+			thecontentbox+=	'<p class="merci pers">Här&nbsp;Anzia&nbsp;Gérard, Madamm&nbsp;Asselborn&nbsp;Anne&#8209;Michèle, Här&nbsp;Barros&nbsp;Marcel, Här&nbsp;Beissel&nbsp;Gilbert, Här&nbsp;Bissen&nbsp;Henri, Madamm&nbsp;Boulanger&#8209;Hoffmann&nbsp;Chantal, Här&nbsp;Brachmond&nbsp;Michel, Här&nbsp;Braun&nbsp;Aly, Här&nbsp;Burkel&nbsp;Jean&#8209;Christophe'+
+											', Madamm&nbsp;Calmes&nbsp;Maureen, Madamm&nbsp;De&nbsp;Almeida&nbsp;Sara, Här&nbsp;Diedert&nbsp;Carlo, Madamm&nbsp;Diedert&nbsp;Marie&#8209;Hélène, Här&nbsp;Feltgen&nbsp;Marc, Här&nbsp;Fischbach&nbsp;Frank, Här&nbsp;Flammang&nbsp;Pascal, Madamm&nbsp;Franck&nbsp;Marie, Här&nbsp;Franzen&nbsp;Erwin' +
+											', Här&nbsp;Gasparet&nbsp;Jeannot, Här&nbsp;Gastauer&nbsp;Romain, Här&nbsp;Genson&nbsp;Romain, Här&nbsp;Gira&nbsp;Camille, Madamm&nbsp;Hall&nbsp;Barbara, Madamm&nbsp;Hellers&nbsp;Josiane, Här&nbsp;Henckes&#8209;Pisana&nbsp;Claudie, Här&nbsp;Hoffmann&nbsp;Luc , Här&nbsp;Jacoby&nbsp;Roland'+
+											', Här&nbsp;Jacques&nbsp;Cédric, Här&nbsp;Karp&nbsp;Fernand, Madamm&nbsp;Kaufhold&nbsp;Caroline, Här&nbsp;Kersch&nbsp;Claude, Madamm&nbsp;Kerschen&nbsp;Carole, Här&nbsp;Kolten&nbsp;Roland, Här&nbsp;Kunsch&nbsp;Camille, Här&nbsp;Lang&nbsp;Alain, Madamm&nbsp;Majerus&nbsp;Christiane'+
+											', Här&nbsp;Meyers&nbsp;Charles, Här&nbsp;Morais&nbsp;Da&nbsp;Cunha&nbsp;Patrick, Madamm&nbsp;Muller&nbsp;Sylvie, Madamm&nbsp;Muller&nbsp;Nadine, Madamm&nbsp;Nosbusch&nbsp;Claudine, Här&nbsp;A&nbsp;Madamm&nbsp;Oberweis&nbsp;Paul&nbsp;A&nbsp;Nathalie, Madamm&nbsp;Ourth&nbsp;Annette, Madamm&nbsp;Philippi&nbsp;Danielle, Här&nbsp;Reckinger&nbsp;Marc'+
+											', Madamm&nbsp;Reiff&nbsp;Thekla, Här&nbsp;Reitz&nbsp;Jean&#8209;Pierre, Här&nbsp;Reitz&nbsp;Francis, Här&nbsp;Rinaldis&nbsp;Nico, Här&nbsp;Sauer&nbsp;Christophe, Här&nbsp;Schaus&nbsp;Laurent, Madamm&nbsp;Scheid&nbsp;Noémie, Madamm&nbsp;Schortgen&nbsp;Anne-Marie, Madamm&nbsp;Stecker&nbsp;Chantal'+
+											', Madamm&nbsp;Steichen&nbsp;Corinne, Här&nbsp;Tesch&nbsp;Jean, Madamm&nbsp;Theisen&nbsp;Anne&nbsp;Marie, Här&nbsp;Therres&nbsp;Consty, Madamm&nbsp;Thilmany&nbsp;Doris, Madamm&nbsp;Tomasina&nbsp;Nicole, Här&nbsp;Wilgé&nbsp;Marc, Här&nbsp;Wilgé&nbsp;Gilbert, Madamm&nbsp;Wolff&nbsp;Claude'+
+											', Här&nbsp;Zeimes&nbsp;Guy, Här&nbsp;A&nbsp;Madamm&nbsp;Zimmer&#8209;Cannivy an Madamm&nbsp;Zoller&nbsp;Sandy'+
+											'</p>';
+			thecontentbox+='<p class="merci">Ouni dei Realisatioun nët meiglech gewierscht wier.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>';
+			thecontentrule='';
+			result='merci';
+			break;
 		default : thecontentbox="<h1>Lëtzebuergesch<br />fir an d'Boxentäsch</h1><h2>Dréck op e Buschtaf, fir déi entspriechend Wierder souwéi och d'Regele gewisen ze kréien.</h2><img src='css/res/KonterbontLogo_Cover-02.png' class='logokonterbont60'>";
 			thecontentrule='<h1>Eng Zesummenaarbecht vun</h1><h2>Autisme Luxembourg a.s.b.l.</h2><h2>Lëtzebuerger Online Dictionnaire</h2><img src="css/res/KonterbontLogo_Cover-02.png" class="logokonterbont">';
 			result='start';
@@ -1255,7 +1271,7 @@ function getContent(contentid,direct=false)
 	// console.log('selector: '+contentid);
 	$$('#thecontent').html(thecontentbox);
 	$$('#thecontentrule').html(thecontentrule);
-	if (result==='start')
+	if (result==='start' || result=='merci' )
 	{
 		//Startup
 		// console.log('startup initiated');

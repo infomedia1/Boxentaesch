@@ -235,26 +235,36 @@ h1, h2, h3, h4, h5, h6 {
 .content-block{
 	height:100%;
 }
+.merci {
+  margin: 10px 5%;
+}
+
 .content-block-popup {
 	height: 90%;
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
 }
 
-.content-block-button, .content-block-button2 {
+.content-block-button, .content-block-button2, .content-block-button3 {
 	position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 42.5%;
     /* text-align: center; */
     /* align-content: center; */
     margin: auto;
-    right: 5%;
+}
+.content-block-button {
+  right: 5%;
 }
 
 .content-block-button2{
 	bottom: 60px;
+  width: 90%;
+  right: 5%;
 }
-
+.content-block-button3 {
+  left: 5%;
+}
 .content-block-inner{
 	background-color:rgba(238,244,254,0);
 	color:rgb(83,74,59);
